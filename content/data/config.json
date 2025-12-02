@@ -32,7 +32,7 @@
                 "type": "Social",
                 "altText": "WhatsApp Airbuzz",
                 "label": "WhatsApp",
-                "url": "https://api.whatsapp.com/send/?phone=5521980736600&text=Ol%C3%A1+tenho+interesse+em+um+im%C3%B3vel&type=phone_number&app_absent=0",
+                "url": "https://wa.me/5521980736600",
                 "icon": "whatsapp"
             }
         ],
