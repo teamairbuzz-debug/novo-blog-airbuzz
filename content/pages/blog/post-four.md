@@ -1,21 +1,38 @@
 ---
 type: PostLayout
-title: Sharing my wisdom with the world 🌎
+title: Conheça Tuca Oliveira Gastronomia: uma jornada apaixonante pela culinária!
 colors: colors-a
-date: '2024-02-01'
-author: content/data/team/doris-soto.json
-excerpt: >-
-  More context that may or may not be helpful
+date: '2025-05-18'
+author: content/data/team/team-airbuzz.json
+excerpt: Olá a todos! Hoje o Airbuzz está muito empolgado em apresentar a vocês uma talentosa e inspiradora chef de cozinha: Tuca Oliveira.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image4.jpg
-  altText: Post thumbnail image
+  url: /images/tuca-oliveira-destaque.jpg
+  altText: Chef Tuca Oliveira em ação
+media1: # Renomeei para media1 para consistência
+  url: /images/tuca-oliveira-destaque.jpg # Imagem da chef
+  altText: Buffet Chef Tuca Oliveira 
+  caption: Tuca Oliveira, paixão e talento na cozinha.
+  elementId: media1
+  type: ImageBlock
+media2: # Nova imagem de prato
+  url: /images/prato-tuca.jpg
+  altText: Prato exclusivo da Tuca Oliveira Gastronomia
+  caption: Uma explosão de sabores em cada detalhe.
+  elementId: media2
+  type: ImageBlock
+media3: # NOVO BLOCO para a imagem final
+  url: /images/tuca-airbuzz-parceria.jpg 
+  altText: Tuca Oliveira Gastronomia em parceria com Airbuzz
+  caption: Sabores memoráveis em eventos Airbuzz.
+  elementId: media3
+  type: ImageBlock
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
     colors: colors-f
     variant: variant-d
-    subtitle: Recent posts
+    subtitle: Posts Recentes
     showDate: true
     showAuthor: false
     showExcerpt: true
@@ -32,83 +49,24 @@ bottomSections:
         textAlign: left
     showFeaturedImage: true
     showReadMoreLink: true
-  - type: ContactSection
-    backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
-    colors: colors-f
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: full
-          type: EmailFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
-      styles:
-        self:
-          textAlign: center
-    styles:
-      self:
-        height: auto
-        width: narrow
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
-        flexDirection: row
-        textAlign: left
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+Olá a todos! Hoje o [Airbuzz](https://airbuzz.co/) está muito empolgado em apresentar a vocês uma talentosa e inspiradora chef de cozinha: Tuca Oliveira. Prepare-se para mergulhar em uma experiência culinária única e encantadora enquanto exploramos o mundo gastronômico de Tuca.
 
-## Heading 2
+{{% include media1 %}} # <--- Inserindo a imagem da chef
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+Tuca Oliveira é uma verdadeira mestra da culinária, apaixonada por criar pratos excepcionais que cativam não apenas o paladar, mas também a alma. Sua paixão e talento são evidentes em cada criação gastronômica que ela compartilha com o mundo.
 
-### Heading 3
+O que mais me impressiona em Tuca Oliveira Gastronomia é a capacidade de personalizar cada experiência de acordo com as necessidades e desejos de seus clientes. Seja para um jantar íntimo em casa, um evento especial ou uma celebração de casamento dos sonhos, Tuca dedica-se a criar um cardápio personalizado que reflita a individualidade de cada ocasião.
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque.
+A criatividade de Tuca vai além dos ingredientes. Ela possui uma habilidade excepcional de reinventar sabores tradicionais e explorar novas combinações, resultando em pratos que são uma verdadeira celebração da culinária contemporânea. Cada mordida é uma experiência sensorial única, repleta de camadas de sabor e texturas que nos transportam para um mundo de delícias gastronômicas.
 
-```javascript
-{
-  page.content && (
-    <Markdown
-      options={{ forceBlock: true, overrides: { pre: HighlightedPreBlock } }}
-      className="sb-markdown max-w-3xl mx-auto"
-      data-sb-field-path="content"
-    >
-      {page.content}
-    </Markdown>
-  );
-}
-```
+{{% include media2 %}} # <--- Inserindo a imagem do prato
 
-In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+Tuca Oliveira é uma chef que se preocupa não apenas com a qualidade da comida, mas também com a experiência completa. Sua equipe é composta por profissionais dedicados que compartilham a mesma paixão pela gastronomia e pelo atendimento excepcional. Eles se esforçam para criar um ambiente acolhedor e personalizado, onde cada cliente se sinta especial e bem cuidado.
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+Se você está procurando por uma experiência gastronômica verdadeiramente memorável, Tuca Oliveira Gastronomia é a escolha perfeita. Sua paixão, habilidade e comprometimento em oferecer o melhor em termos de sabor e atendimento irão cativar você e seus convidados.
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+{{% include media3 %}} # <--- Imagem final de parceria
+
+E temos uma notícia legal para compartilhar! Agora, a Tuca Oliveira Gastronomia é parceira do [Airbuzz](https://airbuzz.co/), proporcionando experiências culinárias incríveis em eventos organizados através da plataforma. Juntos, estamos comprometidos em oferecer momentos gastronômicos memoráveis, onde cada prato preparado pela talentosa Tuca Oliveira leva os convidados a uma jornada de sabores excepcionais. Prepare-se para se deliciar com essa parceria de sucesso entre Tuca Oliveira Gastronomia e o Airbuzz!
