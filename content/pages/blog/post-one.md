@@ -10,7 +10,7 @@ featuredImage:
   url: /images/gravacao-destaque.jpg # URL da sua imagem de destaque
   altText: Local ideal para gravação de lives e clipes
 media:
-  url: /images/gravacao-interna.jpg # URL da imagem que você quer adicionar no meio do texto
+  url: /images/live-safadão.jpg # URL da imagem que você quer adicionar no meio do texto
   altText: Cenário único para gravação
   caption: Encontre o espaço certo para seu tipo de gravação!
   elementId: ''
