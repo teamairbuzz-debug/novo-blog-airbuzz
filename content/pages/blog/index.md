@@ -4,7 +4,7 @@ title: Blog Airbuzz
 colors: colors-a
 postFeed:
   type: PostFeedSection
-  colors: colors-f
+  colors: colors-a
   showDate: true
   showAuthor: false
   showExcerpt: true
