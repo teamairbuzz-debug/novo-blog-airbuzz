@@ -1,5 +1,5 @@
 ---
-type: PostLayout
+type: PostLayout 
 title: Conheça Tuca Oliveira Gastronomia: uma jornada apaixonante pela culinária!
 colors: colors-a
 date: '2025-05-18'
