@@ -14,12 +14,12 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      I’m a developer, digital artist, consultant and a bunch of other
-      impressive titles and buzz words.
+    Sua Experiência Começa Aqui: Casas Exclusivas para Eventos Memoráveis e 
+    Hospedagem Única.
     subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
+    Transformamos seus eventos e viagens em momentos inesquecíveis. 
+    Descubra propriedades criteriosamente selecionadas, perfeitas para reuniões de
+      equipe, festas exclusivas e hospedagens premium.
     styles:
       self:
         height: auto
