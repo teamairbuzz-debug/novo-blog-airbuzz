@@ -1,36 +1,24 @@
 ---
 type: PostLayout
-title: Conheça Tuca Oliveira Gastronomia: uma jornada apaixonante pela culinária!
+title: A escolha do local para um ensaio fotográfico perfeito
 colors: colors-a
-date: '2025-05-18'
+date: '2025-04-25'
 author: content/data/team/team-airbuzz.json
-excerpt: Olá a todos! Hoje o Airbuzz está muito empolgado em apresentar a vocês uma talentosa e inspiradora chef de cozinha: Tuca Oliveira.
+excerpt: Estúdios tradicionais perdem território para casas autênticas nas campanhas de marketing.
 featuredImage:
   type: ImageBlock
-  url: /images/tuca-oliveira-destaque.jpg
-  altText: Chef Tuca Oliveira em ação
-media1: # Renomeei para media1 para consistência
-  url: /images/tuca-oliveira-destaque.jpg # Imagem da chef
-  altText: Buffet Chef Tuca Oliveira
-  caption: Tuca Oliveira, paixão e talento na cozinha.
-  elementId: media1
-  type: ImageBlock
-media2: # Nova imagem de prato
-  url: /images/prato-tuca.jpg
-  altText: Prato exclusivo da Tuca Oliveira Gastronomia
-  caption: Uma explosão de sabores em cada detalhe.
-  elementId: media2
-  type: ImageBlock
-media3: # NOVO BLOCO para a imagem final
-  url: /images/tuca-airbuzz-parceria.jpg
-  altText: Tuca Oliveira Gastronomia em parceria com Airbuzz
-  caption: Sabores memoráveis em eventos Airbuzz.
-  elementId: media3
+  url: /images/ensaio-foto.jpg # URL da sua imagem de destaque
+  altText: Local ideal para ensaio fotográfico
+media:
+  url: /images/ensaio-foto.jpg # URL da imagem que você quer adicionar no meio do texto
+  altText: Cenário autêntico para campanha de marketing
+  caption: Casas com personalidade trazem autenticidade às campanhas.
+  elementId: ''
   type: ImageBlock
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
-    colors: colors-f
+    colors: colors-f # Fundo Laranja/Azul na seção de posts recentes
     variant: variant-d
     subtitle: Posts Recentes
     showDate: true
@@ -51,22 +39,24 @@ bottomSections:
     showReadMoreLink: true
 ---
 
-Olá a todos! Hoje o [Airbuzz](https://airbuzz.co/) está muito empolgado em apresentar a vocês uma talentosa e inspiradora chef de cozinha: Tuca Oliveira. Prepare-se para mergulhar em uma experiência culinária única e encantadora enquanto exploramos o mundo gastronômico de Tuca.
+Sabe aquela casa que tem aquele algo extra que a torna inesquecível?
 
-{{% include media1 %}} # <--- Inserindo a imagem da chef
+O sucesso de um ensaio fotográfico, ou até mesmo de uma gravação de um filme, clipe ou reportagem, depende muito da escolha do local perfeito. Não é qualquer lugar que vai dar certo, não! Uma equipe de marketing competente dedica tempo para fazer uma pesquisa detalhada sobre os objetivos da campanha, do público alvo, da mensagem a ser passada, e é claro, do cenário ideal, que passa pelo estilo arquitetônico, paisagismo até a decoração. Não é à toa que dizem que a perfeição está nos detalhes!
 
-Tuca Oliveira é uma verdadeira mestra da culinária, apaixonada por criar pratos excepcionais que cativam não apenas o paladar, mas também a alma. Sua paixão e talento são evidentes em cada criação gastronômica que ela compartilha com o mundo.
+O mundo está mudando, a sociedade e o mercado também. As top models da década de 80 precisavam se encaixar em um padrão de beleza ditado pela moda. O mercado de hoje quer todos os biotipos. A busca é por personalidade e autenticidade! Assim como os astros das telenovelas foram substituídos por influenciadores digitais, hoje quem tem o maior número de seguidores nas redes sociais é quem interessa às grandes marcas. Pessoas comuns são os novos astros! A mudança também aconteceu nos cenários das gravações e ensaios fotográficos. Já que, quem protagoniza é uma mulher comum e autêntica, porque não fotografá-la em uma casa ao invés de um mero estúdio?
 
-O que mais me impressiona em Tuca Oliveira Gastronomia é a capacidade de personalizar cada experiência de acordo com as necessidades e desejos de seus clientes. Seja para um jantar íntimo em casa, um evento especial ou uma celebração de casamento dos sonhos, Tuca dedica-se a criar um cardápio personalizado que reflita a individualidade de cada ocasião.
+Existem as casas de praia em estilo bem tropical, que trazem sensação de frescor e natureza típicos das casas litorâneas; casas de fazenda de estilo colonial que remetem ao aconchego, conforto e tranquilidade da vida rústica no campo; casas modernas e contemporâneas com linhas retas e traços minimalistas; as casas de estilo cottage, pequenas e muito convidativas que você sente vontade de chamar de “lar, doce lar”; as casas de estilo mediterrâneo caracterizadas pelo charme do litoral da Espanha, Itália e Grécia, com o uso do branco para pintura das paredes, amplos terraços e jardins, além do uso de revestimentos cerâmicos.
 
-A criatividade de Tuca vai além dos ingredientes. Ela possui uma habilidade excepcional de reinventar sabores tradicionais e explorar novas combinações, resultando em pratos que são uma verdadeira celebração da culinária contemporânea. Cada mordida é uma experiência sensorial única, repleta de camadas de sabor e texturas que nos transportam para um mundo de delícias gastronômicas.
+Mas como faço para encontrar casas bonitas e disponíveis para sessões de fotos? Deixe a Katia Leão, dona da marca de acessórios Andoria, contar como ela conseguiu organizar, num estalar de dedos, seu último ensaio fotográfico em uma casa encantadora no Rio de Janeiro.
 
-{{% include media2 %}} # <--- Inserindo a imagem do prato
+> “Eu estava procurando um cenário especial para a minha próxima campanha do Dia das Mães protagonizada por uma mãe e uma filha. Era bastante difícil, pois todas as casas bonitas que eu encontrava no Airbnb ou outros sites de curta temporada tinham um mínimo de aluguel de 3 diárias. Puxa, não cabia no meu orçamento… :-)”
+> 
+> Foi aí que o fotógrafo Leonardo Talarico e a diretora artística da campanha, Amandha Monteiro, me falaram de sites de aluguel de casas em day use como solução perfeita para um dia só de fotos.
 
-Tuca Oliveira é uma chef que se preocupa não apenas com a qualidade da comida, mas também com a experiência completa. Sua equipe é composta por profissionais dedicados que compartilham a mesma paixão pela gastronomia e pelo atendimento excepcional. Eles se esforçam para criar um ambiente acolhedor e personalizado, onde cada cliente se sinta especial e bem cuidado.
+“Encontramos a casa perfeita para a campanha do Dia das Mães da Andoria na plataforma [Airbuzz](https://airbuzz.co/). A casa era muito acolhedora, com sua grande sala integrada à varanda com teto de vidro, mesclando o calor da madeira ao estilo moderno. Aproveitamos muito do grande jardim e do deck da piscina.” conta Amandha Monteiro.
 
-Se você está procurando por uma experiência gastronômica verdadeiramente memorável, Tuca Oliveira Gastronomia é a escolha perfeita. Sua paixão, habilidade e comprometimento em oferecer o melhor em termos de sabor e atendimento irão cativar você e seus convidados.
+“Quando vimos aquela parede de tijolinhos rústicos em cor terracota com uma grande mesa de madeira de demolição, vimos de cara um cenário perfeito: um momento de carinho entre mãe e filha deitadas naquela mesa. Utilizamos apenas a sala, o jardim, a piscina e o espaço gourmet, assim os proprietários nem tiveram que sair de casa!” acrescenta Leonardo Talarico.
 
-{{% include media3 %}} # <--- Imagem final de parceria
+Assista ao [Making of dessa linda campanha que teve ensaio fotográfico com duração de 5 horas em casa alugada em Day Use.](https://www.instagram.com/p/CN2VBaDJ9hV/?utm_source=ig_web_copy_link)
 
-E temos uma notícia legal para compartilhar! Agora, a Tuca Oliveira Gastronomia é parceira do [Airbuzz](https://airbuzz.co/), proporcionando experiências culinárias incríveis em eventos organizados através da plataforma. Juntos, estamos comprometidos em oferecer momentos gastronômicos memoráveis, onde cada prato preparado pela talentosa Tuca Oliveira leva os convidados a uma jornada de sabores excepcionais. Prepare-se para se deliciar com essa parceria de sucesso entre Tuca Oliveira Gastronomia e o Airbuzz!
+Descubra essa e outras centenas de casas disponíveis para locação em Day Use na plataforma [Airbuzz](https://airbuzz.co/). Cada uma com seu toque especial que podem tornar seu ensaio fotográfico inesquecível!
