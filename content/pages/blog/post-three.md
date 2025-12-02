@@ -7,10 +7,10 @@ author: content/data/team/team-airbuzz.json
 excerpt: Encontre espaços para seu churrasco dentro do orçamento!
 featuredImage:
   type: ImageBlock
-  url: /images/churrasco.jpeg # URL da sua imagem de destaque
+  url: /images/churrasco.jpg # URL da sua imagem de destaque
   altText: Local ideal para churrasco e eventos
 media:
-  url: /images/casa-churrasco.jpeg # URL da imagem que você quer adicionar no meio do texto
+  url: /images/casa-churrasco.jpg # URL da imagem que você quer adicionar no meio do texto
   altText: Área externa luxuosa com churrasqueira
   caption: Área de lazer completa em bairro nobre.
   elementId: ''
