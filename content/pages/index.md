@@ -14,10 +14,12 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      Sua Experiência Começa Aqui: Casas Exclusivas para Eventos Memoráveis e Hospedagem Única.
+      Sua Experiência Começa Aqui: Casas Exclusivas para Eventos Memoráveis e
+      Hospedagem Única.
     subtitle: >-
-      Transformamos seus eventos e viagens em momentos inesquecíveis.Descubra propriedades criteriosamente selecionadas, perfeitas para reuniões de
-      equipe, festas exclusivas e hospedagens premium.
+      Transformamos seus eventos e viagens em momentos inesquecíveis.
+      Descubra propriedades criteriosamente selecionadas, perfeitas para reuniões de
+      equipe, festas exclusivas e hospedagens premium.
     styles:
       self:
         height: auto
