@@ -56,3 +56,5 @@ Funciona assim: você paga por um período de horas do dia, e não pela diária 
 A plataforma Airbuzz oferece o sistema Day Use com diversos filtros e mecanismos para uma busca personalizada. É tudo feito diretamente do site, de forma rápida e segura.
 
 Dê uma olhada aqui em uma das centenas de casas com jardim amplo para sua próxima gravação bombar!
+
+Acesse o [site da Airbuzz](https://airbuzz.co/) para ver as opções!
