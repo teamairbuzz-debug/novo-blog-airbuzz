@@ -1,12 +1,12 @@
 {
     "type": "ThemeStyle",
-    "light": "#FFFFFF",      // FUNDO CLARO: BRANCO
-    "onLight": "#EE461F",    // TEXTO CLARO: LARANJA
-    "dark": "#FFFFFF",       // FUNDO ESCURO: BRANCO (Se o colors-a estiver pegando 'dark')
-    "onDark": "#EE461F",     // TEXTO ESCURO: LARANJA (Se o colors-a estiver pegando 'dark')
-    "primary": "#EE461F",    // COR PRIMÁRIA: LARANJA
+    "light": "#FFFFFF",      
+    "onLight": "#EE461F",    
+    "dark": "#FFFFFF",       
+    "onDark": "#EE461F",     
+    "primary": "#EE461F",    
     "onPrimary": "#FFFFFF",
-    "secondary": "#3e8cde",  // COR SECUNDÁRIA: AZUL
+    "secondary": "#3e8cde", 
     "onSecondary": "#FFFFFF",
     "complementary": "#3fbdc",
     "onComplementary": "#FFFFFF",
