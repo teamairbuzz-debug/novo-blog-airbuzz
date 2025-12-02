@@ -57,7 +57,6 @@ Mas como faço para encontrar casas bonitas e disponíveis para sessões de foto
 
 “Quando vimos aquela parede de tijolinhos rústicos em cor terracota com uma grande mesa de madeira de demolição, vimos de cara um cenário perfeito: um momento de carinho entre mãe e filha deitadas naquela mesa. Utilizamos apenas a sala, o jardim, a piscina e o espaço gourmet, assim os proprietários nem tiveram que sair de casa!” acrescenta Leonardo Talarico.
 
-Assista ao Making of dessa linda campanha que teve ensaio fotográfico com duração de 5 horas em casa alugada em Day Use.
-*(Se tiver o link do vídeo, substitua esta linha pelo código de incorporação ou link do vídeo.)*
+Assista ao [Making of dessa linda campanha que teve ensaio fotográfico com duração de 5 horas em casa alugada em Day Use.](https://www.instagram.com/p/CN2VBaDJ9hV/?utm_source=ig_web_copy_link))*
 
 Descubra essa e outras centenas de casas disponíveis para locação em Day Use na plataforma [Airbuzz](https://airbuzz.co/). Cada uma com seu toque especial que podem tornar seu ensaio fotográfico inesquecível!
