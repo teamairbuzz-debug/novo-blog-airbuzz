@@ -1,7 +1,7 @@
 {
     "type": "ThemeStyle",
-    "light": "#FFFFFF",
-    "onLight": "#3e8cde",
+    "light": "#FFFFFF",      // FUNDO CLARO (Geral)
+    "onLight": "#EE461F",    // TEXTO SOBRE FUNDO CLARO (Seu Laranja)
     "dark": "#000000",
     "onDark": "#FFFFFF",
     "primary": "#EE461F",
