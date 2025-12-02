@@ -1,34 +1,26 @@
 ---
 type: PostLayout
-title: The Great Unbundling
+title: A escolha do local para um ensaio fotográfico perfeito
 colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg2.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 75
-date: '2021-11-03'
-author: content/data/team/doris-soto.json
-excerpt: >-
-  More context that may or may not be helpful
+date: '2025-04-25'
+author: content/data/team/team-airbuzz.json
+excerpt: Estúdios tradicionais perdem território para casas autênticas nas campanhas de marketing.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image2.jpg
-  altText: Post thumbnail image
+  url: /images/ensaio-foto.jpg # URL da sua imagem de destaque
+  altText: Local ideal para ensaio fotográfico
 media:
-  url: /images/post-4.png
-  altText: altText of the image
-  caption: Caption of the image
+  url: /images/ensaio-foto.jpg # URL da imagem que você quer adicionar no meio do texto
+  altText: Cenário autêntico para campanha de marketing
+  caption: Casas com personalidade trazem autenticidade às campanhas.
   elementId: ''
   type: ImageBlock
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
-    colors: colors-f
+    colors: colors-f # Fundo Laranja/Azul na seção de posts recentes
     variant: variant-d
-    subtitle: Recent posts
+    subtitle: Posts Recentes
     showDate: true
     showAuthor: false
     showExcerpt: true
@@ -45,63 +37,27 @@ bottomSections:
         textAlign: left
     showFeaturedImage: true
     showReadMoreLink: true
-  - type: ContactSection
-    backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
-    colors: colors-f
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: full
-          type: EmailFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
-      styles:
-        self:
-          textAlign: center
-    styles:
-      self:
-        height: auto
-        width: wide
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
-        flexDirection: row
-        textAlign: left
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+Sabe aquela casa que tem aquele algo extra que a torna inesquecível?
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+O sucesso de um ensaio fotográfico, ou até mesmo de uma gravação de um filme, clipe ou reportagem, depende muito da escolha do local perfeito. Não é qualquer lugar que vai dar certo, não! Uma equipe de marketing competente dedica tempo para fazer uma pesquisa detalhada sobre os objetivos da campanha, do público alvo, da mensagem a ser passada, e é claro, do cenário ideal, que passa pelo estilo arquitetônico, paisagismo até a decoração. Não é à toa que dizem que a perfeição está nos detalhes!
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+O mundo está mudando, a sociedade e o mercado também. As top models da década de 80 precisavam se encaixar em um padrão de beleza ditado pela moda. O mercado de hoje quer todos os biotipos. A busca é por personalidade e autenticidade! Assim como os astros das telenovelas foram substituídos por influenciadores digitais, hoje quem tem o maior número de seguidores nas redes sociais é quem interessa às grandes marcas. Pessoas comuns são os novos astros! A mudança também aconteceu nos cenários das gravações e ensaios fotográficos. Já que, quem protagoniza é uma mulher comum e autêntica, porque não fotografá-la em uma casa ao invés de um mero estúdio?
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+Existem as casas de praia em estilo bem tropical, que trazem sensação de frescor e natureza típicos das casas litorâneas; casas de fazenda de estilo colonial que remetem ao aconchego, conforto e tranquilidade da vida rústica no campo; casas modernas e contemporâneas com linhas retas e traços minimalistas; as casas de estilo cottage, pequenas e muito convidativas que você sente vontade de chamar de “lar, doce lar”; as casas de estilo mediterrâneo caracterizadas pelo charme do litoral da Espanha, Itália e Grécia, com o uso do branco para pintura das paredes, amplos terraços e jardins, além do uso de revestimentos cerâmicos.
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+Mas como faço para encontrar casas bonitas e disponíveis para sessões de fotos? Deixe a Katia Leão, dona da marca de acessórios Andoria, contar como ela conseguiu organizar, num estalar de dedos, seu último ensaio fotográfico em uma casa encantadora no Rio de Janeiro.
+
+> “Eu estava procurando um cenário especial para a minha próxima campanha do Dia das Mães protagonizada por uma mãe e uma filha. Era bastante difícil, pois todas as casas bonitas que eu encontrava no Airbnb ou outros sites de curta temporada tinham um mínimo de aluguel de 3 diárias. Puxa, não cabia no meu orçamento… :-)”
+> 
+> Foi aí que o fotógrafo Leonardo Talarico e a diretora artística da campanha, Amandha Monteiro, me falaram de sites de aluguel de casas em day use como solução perfeita para um dia só de fotos.
+
+“Encontramos a casa perfeita para a campanha do Dia das Mães da Andoria na plataforma [Airbuzz](https://airbuzz.co/). A casa era muito acolhedora, com sua grande sala integrada à varanda com teto de vidro, mesclando o calor da madeira ao estilo moderno. Aproveitamos muito do grande jardim e do deck da piscina.” conta Amandha Monteiro.
+
+“Quando vimos aquela parede de tijolinhos rústicos em cor terracota com uma grande mesa de madeira de demolição, vimos de cara um cenário perfeito: um momento de carinho entre mãe e filha deitadas naquela mesa. Utilizamos apenas a sala, o jardim, a piscina e o espaço gourmet, assim os proprietários nem tiveram que sair de casa!” acrescenta Leonardo Talarico.
+
+Assista ao Making of dessa linda campanha que teve ensaio fotográfico com duração de 5 horas em casa alugada em Day Use.
+*(Se tiver o link do vídeo, substitua esta linha pelo código de incorporação ou link do vídeo.)*
+
+Descubra essa e outras centenas de casas disponíveis para locação em Day Use na plataforma [Airbuzz](https://airbuzz.co/). Cada uma com seu toque especial que podem tornar seu ensaio fotográfico inesquecível!
