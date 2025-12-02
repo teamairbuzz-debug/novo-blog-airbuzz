@@ -1,10 +1,10 @@
 ---
 type: PostFeedLayout
 title: Blog Airbuzz
-colors: colors-a
+colors: colors-c
 postFeed:
   type: PostFeedSection
-  colors: colors-a
+  colors: colors-c
   showDate: true
   showAuthor: false
   showExcerpt: true
@@ -24,7 +24,7 @@ topSections:
     title: Blog Airbuzz
     subtitle: ''
     actions: []
-    colors: colors-a
+    colors: colors-c
     backgroundSize: full
     elementId: ''
     styles:
