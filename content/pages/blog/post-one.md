@@ -7,7 +7,7 @@ author: content/data/team/team-airbuzz.json # ATUALIZE O CAMINHO DO SEU PERFIL
 excerpt: Pague menos por imóveis incríveis apenas mudando o jeito que você pesquisa!
 featuredImage:
   type: ImageBlock
-  url: /images/gravacao-destaque.jpg # URL da sua imagem de destaque
+  url: /images/live-safadão.jpg # URL da sua imagem de destaque
   altText: Local ideal para gravação de lives e clipes
 media:
   url: /images/live-safadão.jpg # URL da imagem que você quer adicionar no meio do texto
