@@ -1,5 +1,5 @@
 ---
-type: PostLayout 
+type: PostLayout
 title: Conheça Tuca Oliveira Gastronomia: uma jornada apaixonante pela culinária!
 colors: colors-a
 date: '2025-05-18'
@@ -11,7 +11,7 @@ featuredImage:
   altText: Chef Tuca Oliveira em ação
 media1: # Renomeei para media1 para consistência
   url: /images/tuca-oliveira-destaque.jpg # Imagem da chef
-  altText: Buffet Chef Tuca Oliveira 
+  altText: Buffet Chef Tuca Oliveira
   caption: Tuca Oliveira, paixão e talento na cozinha.
   elementId: media1
   type: ImageBlock
@@ -22,7 +22,7 @@ media2: # Nova imagem de prato
   elementId: media2
   type: ImageBlock
 media3: # NOVO BLOCO para a imagem final
-  url: /images/tuca-airbuzz-parceria.jpg 
+  url: /images/tuca-airbuzz-parceria.jpg
   altText: Tuca Oliveira Gastronomia em parceria com Airbuzz
   caption: Sabores memoráveis em eventos Airbuzz.
   elementId: media3
