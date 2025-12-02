@@ -10,14 +10,10 @@
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Info",
-                "url": "/info"
+                "label": "Site Oficial",
+                "url": "https://airbuzz.co/"
             },
-            {
-                "type": "Link",
-                "label": "Projects",
-                "url": "/projects"
-            },
+
             {
                 "type": "Link",
                 "label": "Blog",
@@ -27,17 +23,17 @@
         "socialLinks": [
             {
                 "type": "Social",
-                "altText": "Twitter",
-                "label": "Twitter",
-                "url": "https://twitter.com/netlify",
-                "icon": "twitter"
+                "altText": "Instagram Airbuzz",
+                "label": "Instagram",
+                "url": "https://www.instagram.com/airbuzz.casas.sitios/",
+                "icon": "instagram"
             },
             {
                 "type": "Social",
-                "altText": "GitHub",
-                "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
-                "icon": "github"
+                "altText": "WhatsApp Airbuzz",
+                "label": "WhatsApp",
+                "url": "https://api.whatsapp.com/send/?phone=5521980736600&text=Ol%C3%A1+tenho+interesse+em+um+im%C3%B3vel&type=phone_number&app_absent=0",
+                "icon": "whatsapp"
             }
         ],
         "styles": {
@@ -51,14 +47,14 @@
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Info",
-                "url": "/info",
+                "label": "Site",
+                "url": "https://airbuzz.co/",
                 "altText": ""
             },
             {
                 "type": "Link",
-                "label": "Contact",
-                "url": "mailto:thisismyemail.@myemail.me",
+                "label": "Contato",
+                "url": "mailto:contato@airbuzz.co",
                 "altText": ""
             },
             {
@@ -76,15 +72,15 @@
         ],
         "contacts": {
             "type": "ContactBlock",
-            "title": "Contact details",
-            "phoneNumber": "850-123-5021",
-            "phoneAltText": "My phone number",
-            "email": "thisismyemail.@myemail.me",
+            "title": "Detalhes de Contato",
+            "phoneNumber": "+55 21 98073-6600",
+            "phoneAltText": "Telefone da Airbuzz",
+            "email": "contato@airbuzz.co",
             "emailAltText": "My email",
-            "address": "312 Lovely Street, Brooklyn, NY, 123456",
-            "addressAltText": "My address"
+            "address": "Rio de Janeiro, RJ",
+            "addressAltText": "Endereço da Airbuzz"
         },
-        "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",
+        "copyrightText": "© 2025 Airbuzz. Powered by [Netlify](https://www.netlify.com/)",
         "styles": {
             "self": {
                 "width": "narrow",
