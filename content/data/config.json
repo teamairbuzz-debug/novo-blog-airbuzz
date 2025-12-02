@@ -65,20 +65,20 @@
             },
             {
                 "type": "Link",
-                "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
-                "altText": "Netlify templates"
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/company/airbuzzco",
+                "altText": "LinkedIn"
             }
         ],
         "contacts": {
             "type": "ContactBlock",
-            "title": "Detalhes de Contato",
+            "title": "Contato",
             "phoneNumber": "+55 21 98073-6600",
             "phoneAltText": "Telefone da Airbuzz",
             "email": "contato@airbuzz.co",
-            "emailAltText": "My email",
+            "emailAltText": "Email",
             "address": "Rio de Janeiro, RJ",
-            "addressAltText": "Endereço da Airbuzz"
+            "addressAltText": "Endereço"
         },
         "copyrightText": "© 2025 Airbuzz. Powered by [Netlify](https://www.netlify.com/)",
         "styles": {
