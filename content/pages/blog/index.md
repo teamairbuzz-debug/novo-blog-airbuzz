@@ -1,7 +1,7 @@
 ---
 type: PostFeedLayout
 title: Blog Airbuzz
-colors: colors-c
+colors: colors-a
 postFeed:
   type: PostFeedSection
   colors: colors-f
@@ -24,7 +24,7 @@ topSections:
     title: Blog Airbuzz
     subtitle: ''
     actions: []
-    colors: colors-f
+    colors: colors-a
     backgroundSize: full
     elementId: ''
     styles:
