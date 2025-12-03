@@ -1,16 +1,16 @@
 {
     "type": "ThemeStyle",
-    "light": "#FFFFFF",
-    "onLight": "#EE461F",
-    "dark": "#FFFFFF",
-    "onDark": "#EE461F",
-    "primary": "#EE461F",
-    "onPrimary": "#FFFFFF",
+    "light": "#FFFFFF",      // Fundo Claro: Branco
+    "onLight": "#EE461F",    // Texto Claro: Laranja
+    "dark": "#000000",       // Fundo Escuro: Preto
+    "onDark": "#FFFFFF",     // Texto Escuro: Branco
+    "primary": "#EE461F",    // COR PRIMÁRIA: LARANJA
+    "onPrimary": "#FFFFFF",  // Texto sobre Primária: Branco
     "secondary": "#3e8cde",
     "onSecondary": "#FFFFFF",
-    "complementary": "#3fbdc",  // VERIFIQUE SE ESTE VALOR É VÁLIDO. Se for hexadecimal, deve ter 6 dígitos, como #03fbdc.
+    "complementary": "#3fbdc",
     "onComplementary": "#FFFFFF",
     "fontBody": "\"DM Mono\", monospace",
     "headingWeight": "400",
-    "headingCase": "uppercase" // NUNCA DEVE TER VÍRGULA AQUI se for o último item.
-}
+    "headingCase": "uppercase"
+} 
