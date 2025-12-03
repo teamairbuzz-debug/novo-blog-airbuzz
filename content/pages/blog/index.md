@@ -1,10 +1,10 @@
 ---
 type: PostFeedLayout
 title: Blog Airbuzz
-colors: colors-e
+colors: colors-f # ALTERADO: Voltando para o esquema de fundo Laranja
 postFeed:
   type: PostFeedSection
-  colors: colors-e
+  colors: colors-f # ALTERADO: Voltando para o esquema de fundo Laranja
   showDate: true
   showAuthor: false
   showExcerpt: true
@@ -24,7 +24,7 @@ topSections:
     title: Blog Airbuzz
     subtitle: ''
     actions: []
-    colors: colors-e
+    colors: colors-f # ALTERADO: Voltando para o esquema de fundo Laranja
     backgroundSize: full
     elementId: ''
     styles:
