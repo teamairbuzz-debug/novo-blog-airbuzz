@@ -1,10 +1,10 @@
 ---
 type: PostFeedLayout
 title: Blog Airbuzz
-colors: colors-f # ALTERADO: Voltando para o esquema de fundo Laranja
+colors: colors-b # 1. Esquema Global
 postFeed:
   type: PostFeedSection
-  colors: colors-f # ALTERADO: Voltando para o esquema de fundo Laranja
+  colors: colors-b # 2. Esquema da Lista de Posts
   showDate: true
   showAuthor: false
   showExcerpt: true
@@ -24,7 +24,7 @@ topSections:
     title: Blog Airbuzz
     subtitle: ''
     actions: []
-    colors: colors-f # ALTERADO: Voltando para o esquema de fundo Laranja
+    colors: colors-b # 3. Esquema da Seção Hero (Título)
     backgroundSize: full
     elementId: ''
     styles:
