@@ -1,11 +1,11 @@
 {
     "type": "ThemeStyle",
-    "light": "#FFFFFF",      // Fundo Claro: Branco
-    "onLight": "#EE461F",    // Texto Claro: Laranja
-    "dark": "#000000",       // Fundo Escuro: Preto
-    "onDark": "#FFFFFF",     // Texto Escuro: Branco
-    "primary": "#EE461F",    // COR PRIMÁRIA: LARANJA
-    "onPrimary": "#FFFFFF",  // Texto sobre Primária: Branco
+    "light": "#FFFFFF",
+    "onLight": "#EE461F",
+    "dark": "#000000",
+    "onDark": "#FFFFFF",
+    "primary": "#EE461F",
+    "onPrimary": "#FFFFFF",
     "secondary": "#3e8cde",
     "onSecondary": "#FFFFFF",
     "complementary": "#3fbdc",
@@ -13,4 +13,4 @@
     "fontBody": "\"DM Mono\", monospace",
     "headingWeight": "400",
     "headingCase": "uppercase"
-} 
+}
