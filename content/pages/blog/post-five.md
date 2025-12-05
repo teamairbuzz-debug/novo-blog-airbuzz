@@ -1,21 +1,32 @@
 ---
 type: PostLayout
-title: AI are so hot right now
-colors: colors-a
-date: '2024-05-02'
-author: content/data/team/doris-soto.json
-excerpt: >-
-  More context that may or may not be helpful
+title: "Comemore seu aniversário pagando muito menos: Dicas de Day Use"
+colors: colors-b # Usando o esquema de Fundo Branco / Texto Laranja
+date: '2025-04-25'
+author: content/data/team/team-airbuzz.json
+excerpt: Como alugar um espaço incrível para sua festa sem passar do orçamento e com ótimo custo-benefício usando a modalidade Day Use.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image5.jpg
-  altText: Post thumbnail image
+  url: /images/aniversario-dayuse-destaque.jpg # URL da imagem de destaque
+  altText: Festa de aniversário em casa moderna com piscina
+media1: # Imagem da festa na casa da Barra
+  url: /images/barra-tijuca-aniversario.jpg 
+  altText: Festa de aniversário na Barra da Tijuca, Rio de Janeiro
+  caption: Casa na Barra da Tijuca, alugada por Day Use, cenário de uma linda festa.
+  elementId: media1
+  type: ImageBlock
+media2: # Vídeo de melhores momentos
+  url: 'https://www.youtube.com/watch?v=SEU_LINK_DO_VIDEO_AQUI' # SUBSTITUIR pelo link do vídeo
+  altText: Melhores momentos da festa de aniversário
+  caption: Assista aos melhores momentos da festa Day Use!
+  elementId: media2
+  type: VideoBlock # Usando VideoBlock para o vídeo
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
-    colors: colors-f
+    colors: colors-f # Mantendo Laranja/Azul para a seção de posts recentes
     variant: variant-d
-    subtitle: Recent posts
+    subtitle: Posts Recentes
     showDate: true
     showAuthor: false
     showExcerpt: true
@@ -32,65 +43,43 @@ bottomSections:
         textAlign: left
     showFeaturedImage: true
     showReadMoreLink: true
-  - type: ContactSection
-    backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
-    colors: colors-f
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: full
-          type: EmailFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
-      styles:
-        self:
-          textAlign: center
-    styles:
-      self:
-        height: auto
-        width: narrow
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
-        flexDirection: row
-        textAlign: left
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+Aniversários são datas muito importantes e todos gostariam que a cada ano esses momentos ficassem guardados na memória. Mas você sabe como realizar uma festa do jeitinho que você quer **sem sair do orçamento e sem dor de cabeça**?
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+Muitas pessoas diriam que utilizar a própria casa é uma boa saída, mas nem sempre é possível. Na maioria das vezes não há espaço suficiente para receber confortavelmente o número de pessoas pretendido, ou então você prefere não ter que se preocupar com a reorganização da casa após a festa.
 
-> “Everybody should learn to program a computer, because it teaches you how to think.”
+Alguns recorrem aos salões de festa do próprio condomínio e acabam se deparando com a má organização e a falta de regras pré-fixadas (como responsabilidade pela limpeza pós-festa). Outros recorrem às áreas comuns do condomínio, o que também pode ser uma dor de cabeça, principalmente quando outras festas estão acontecendo ao mesmo tempo que a sua.
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+Além de todos esses problemas, você fica preso a datas rígidas e faixas de horário limitadas, muitas vezes incompatíveis com seu planejamento.
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+### O Problema das Locações Tradicionais
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+Muitos também se deparam com problemas ao alugar imóveis:
+* **Casas de festas** com espaços que vão muito além do que você precisa.
+* **Serviços fixos** de buffet e animação estipulados pelos donos dos espaços, que muitas vezes são caros e não compensam pela qualidade.
+* Exigência de alugar o local por um dia inteiro (e às vezes até pernoite), como no caso de **sítios e casas de praia**.
+
+Mas e se eu te disser que não precisa ser assim?
+
+### A Solução: Locação por Day Use
+
+Felizmente, hoje existem novas opções de espaço para celebrar uma festa de aniversário: a mais inovadora e de **melhor custo-benefício** é a locação de casas por **Day Use**. Isso mesmo!
+
+Com o **Day Use** é possível alugar espaços externos de casas ou casas inteiras durante o dia, assim como em plataformas de aluguel de temporada, mas **sem pernoite**. Ou seja, você realiza sua festa em um local incrível **pagando menos**!
+
+{{% include media1 %}}
+
+Esta linda casa na Barra da Tijuca, por exemplo, foi cenário para uma linda festa de aniversário em bairro nobre do Rio de Janeiro. O aniversariante optou por alugar a casa inteira, o que saiu por apenas **R$20 por pessoa**. Um valor muito mais em conta do que alugar uma casa de festas totalmente impessoal onde você ainda tem que gastar uma grana com decoração.
+
+{{% include media2 %}}
+
+### Vantagens de Alugar no Airbuzz
+
+Veja essa casa e mais centenas de imóveis em Day Use no [Airbuzz](https://airbuzz.co/), desde casarões com piscina até iates com churrasqueira. Nesta plataforma você com certeza vai encontrar algum espaço do jeitinho que você procura para tornar seu churrasco inesquecível.
+
+* **Liberdade de Escolha:** Os aluguéis do Airbuzz **não possuem vínculo** algum com outras empresas. Você poderá escolher seu buffet favorito sem ter que negociar com os donos do espaço ou acabar fazendo concessões que prejudicam seu bolso.
+* **Regras Claras e Privacidade:** A modalidade possibilita que você alugue um espaço **privativo**, com fichas descritivas e regras claras.
+* **Variedade:** Caso um imóvel não esteja disponível na data pretendida, há **centenas** de outros imóveis para você explorar e se encantar!
+
+E que tal, nesse período em que devemos evitar aglomerações, fazer uma reunião familiar em **petit comitê**? Casas com ambiente aberto e cercados pela natureza irão garantir momentos inesquecíveis e maior segurança para você e seus convidados.
