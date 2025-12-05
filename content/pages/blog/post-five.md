@@ -7,10 +7,10 @@ author: content/data/team/team-airbuzz.json
 excerpt: Como alugar um espaço incrível para sua festa sem passar do orçamento e com ótimo custo-benefício usando a modalidade Day Use.
 featuredImage:
   type: ImageBlock
-  url: /images/aniversario-dayuse-destaque.jpeg # URL da imagem de destaque
+  url: /images/aniversario-dayuse-destaque.jpg # URL da imagem de destaque
   altText: Festa de aniversário em casa moderna com piscina
 media1: # Imagem da festa na casa da Barra
-  url: /images/barra-tijuca-aniversario.jpeg 
+  url: /images/barra-tijuca-aniversario.jpg 
   altText: Festa de aniversário na Barra da Tijuca, Rio de Janeiro
   caption: Casa na Barra da Tijuca, alugada por Day Use, cenário de uma linda festa.
   elementId: media1
