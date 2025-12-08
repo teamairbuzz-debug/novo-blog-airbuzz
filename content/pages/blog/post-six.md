@@ -1,21 +1,26 @@
 ---
 type: PostLayout
-title: How to Structure and Organize a Next.js Project 🗂️
-colors: colors-a
-date: '2024-06-03'
-author: content/data/team/doris-soto.json
-excerpt: >-
-  More context that may or may not be helpful
+title: Conheça Tay: transformando sonhos em realidade em cada evento
+colors: colors-b # Usando o esquema de Fundo Branco / Texto Laranja
+date: '2025-12-08' # Data atualizada para Dezembro de 2025
+author: content/data/team/team-airbuzz.json
+excerpt: Olá! O Airbuzz tem o prazer de apresentar Tay, uma profissional especializada em decoração que encanta a todos com sua criatividade e talento.
 featuredImage:
   type: ImageBlock
-  url: /images/featured-Image6.jpg
-  altText: Post thumbnail image
+  url: /images/tay-decoracao-destaque.jpg # URL da imagem de destaque
+  altText: Designer de eventos Tay em uma decoração de festa
+media1: 
+  url: /images/tay-decoracao-exemplo.jpg # Imagem de um trabalho de decoração da Tay
+  altText: Exemplo de decoração sofisticada de Tay para casamento
+  caption: A criatividade de Tay transforma qualquer espaço em um cenário de sonhos.
+  elementId: media1
+  type: ImageBlock
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
-    colors: colors-f
+    colors: colors-f # Mantendo Laranja/Azul para a seção de posts recentes
     variant: variant-d
-    subtitle: Recent posts
+    subtitle: Posts Recentes
     showDate: true
     showAuthor: false
     showExcerpt: true
@@ -32,63 +37,34 @@ bottomSections:
         textAlign: left
     showFeaturedImage: true
     showReadMoreLink: true
-  - type: ContactSection
-    backgroundSize: full
-    title: 'Stay up-to-date with my words ✍️'
-    colors: colors-f
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: full
-          type: EmailFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
-      styles:
-        self:
-          textAlign: center
-    styles:
-      self:
-        height: auto
-        width: narrow
-        padding:
-          - pt-24
-          - pb-24
-          - pr-4
-          - pl-4
-        flexDirection: row
-        textAlign: left
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante lorem, tincidunt ac leo efficitur, feugiat tempor odio. Curabitur at auctor sapien. Etiam at cursus enim. Suspendisse sed augue tortor. Nunc eu magna vitae lorem pellentesque fermentum. Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper. Donec sed facilisis nibh. Curabitur eget dui in libero euismod commodo nec sit amet est. Etiam id ipsum aliquam, vehicula erat sit amet, consequat tortor.
+Olá! Hoje o [Airbuzz](https://airbuzz.co/) está animado em apresentar a vocês uma profissional especializada em decoração de casamentos e festas de aniversário que tem encantado a todos com sua criatividade e talento: **Tay**. Neste blog, mergulharemos no mundo mágico de Tay, descobrindo como ela transforma sonhos em realidade através de suas decorações encantadoras.
 
-Etiam facilisis lacus nec pretium lobortis. Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu, eget egestas tortor pretium id. Sed imperdiet mattis eleifend. Vivamus suscipit et neque imperdiet venenatis. In malesuada sed urna eget vehicula. Donec fermentum tortor sit amet nisl elementum fringilla. Pellentesque dapibus suscipit faucibus. Nullam malesuada sed urna quis rutrum. Donec facilisis lorem id maximus mattis. Vestibulum quis elit magna. Vestibulum accumsan blandit consequat. Phasellus quis posuere quam.
+### Criando Memórias Inesquecíveis
 
-Vestibulum ullamcorper risus auctor eleifend consequat. Vivamus mollis in tellus ac ullamcorper. Vestibulum sit amet bibendum ipsum, vitae rutrum ex. Nullam cursus, urna et dapibus aliquam, urna leo euismod metus, eu luctus justo mi eget mauris. Proin felis leo, volutpat et purus in, lacinia luctus eros. Pellentesque lobortis massa scelerisque lorem ullamcorper, sit amet elementum nulla scelerisque. In volutpat efficitur nulla, aliquam ornare lectus ultricies ac. Mauris sagittis ornare dictum. Nulla vel felis ut purus fermentum pretium. Sed id lectus ac diam aliquet venenatis. Etiam ac auctor enim. Nunc velit mauris, viverra vel orci ut, egestas rhoncus diam. Morbi scelerisque nibh tellus, vel varius urna malesuada sed. Etiam ultricies sem consequat, posuere urna non, maximus ex. Mauris gravida diam sed augue condimentum pulvinar vel ac dui. Integer vel convallis justo.
+Tay é uma verdadeira artista quando se trata de decorar eventos e festas. Seu objetivo é criar **memórias inesquecíveis** para seus clientes, proporcionando uma experiência visualmente deslumbrante que reflete a personalidade e o estilo de cada ocasião. Cada decoração é cuidadosamente planejada e executada com atenção aos detalhes, resultando em um ambiente que transcende as expectativas e encanta a todos.
 
-Nam rutrum magna sed pellentesque lobortis. Etiam quam mauris, iaculis eget ex ac, rutrum scelerisque nisl. Cras finibus dictum ex sed tincidunt. Morbi facilisis neque porta, blandit mauris quis, pharetra odio. Aliquam dictum quam quis elit auctor, at vestibulum ex pulvinar. Quisque lobortis a lectus quis faucibus. Nulla vitae pellentesque nibh, et fringilla erat. Praesent placerat ac est at tincidunt. Praesent ultricies a ex at ultrices. Etiam sed tincidunt elit. Nulla sagittis neque neque, ultrices dignissim sapien pellentesque faucibus. Donec tempor orci sed consectetur dictum. Ut viverra ut enim ac semper. Integer lacinia sem in arcu tempor faucibus eget non urna. Praesent vel nunc eu libero aliquet interdum non vitae elit. Maecenas pharetra ipsum dolor, et iaculis elit ornare ac.
+### Criatividade e Originalidade
 
-Aenean scelerisque ullamcorper est aliquet blandit. Donec ac tellus enim. Vivamus quis leo mattis, varius arcu at, convallis diam. Donec ac leo at nunc viverra molestie ac viverra nisi. Proin interdum at turpis at varius. Nunc sit amet ex suscipit, convallis ligula eu, pretium turpis. Sed ultricies neque vel mi malesuada, et mollis risus lobortis. Sed condimentum venenatis mauris, id elementum dolor gravida ac. Sed sodales tempus neque, quis iaculis arcu tincidunt ut. Donec vitae faucibus dui. In hac habitasse platea dictumst. Donec erat ex, ullamcorper a massa a, porttitor porta ligula.
+Uma das características mais impressionantes do trabalho de Tay é sua **criatividade e originalidade**. Ela está sempre em busca de novas tendências e ideias inovadoras para trazer um toque único a cada decoração. Seja um tema específico, uma paleta de cores personalizada ou uma ideia fora do comum, Tay é capaz de transformar qualquer conceito em realidade, criando ambientes que deixam todos maravilhados.
+
+{{% include media1 %}}
+
+### Atendimento Personalizado e Versatilidade
+
+Tay acredita que cada cliente é único e merece uma **atenção personalizada**. Desde o primeiro contato até a finalização do evento, ela se dedica a entender as necessidades e desejos de seus clientes, garantindo que cada detalhe seja cuidadosamente planejado e executado.
+
+Não importa o tema ou estilo desejado, Tay possui a habilidade de adaptar sua criatividade para atender às preferências de cada cliente. Desde festas temáticas cheias de fantasia até decorações mais elegantes e sofisticadas, ela consegue trazer à vida qualquer conceito, adicionando toques especiais e elementos decorativos que fazem toda a diferença.
+
+### Transformando Sonhos em Realidade
+
+Tay é verdadeiramente apaixonada por transformar sonhos em realidade. Ela entende que cada evento é único e especial, e sua missão é criar uma atmosfera mágica que envolva todos os presentes. Com sua dedicação, talento e atenção aos detalhes, Tay consegue fazer com que cada celebração seja uma experiência memorável e encantadora.
+
+### Conclusão e Parceria Airbuzz
+
+Se você está procurando uma profissional especializada em decoração de eventos e festas de aniversário que possa transformar seus sonhos em realidade, Tay é a escolha perfeita.
+
+E aqui vai uma ótima notícia: **Tay agora é parceira do Airbuzz!**
+
+Isso significa que você pode contar com a expertise e talento em decoração de Tay nas casas que você aluga para eventos através do [Airbuzz](https://airbuzz.co/). Juntos, estamos comprometidos em tornar cada festa uma experiência visualmente deslumbrante e memorável. Prepare-se para vivenciar a mágica da parceria entre Tay e o Airbuzz, transformando seus sonhos em realidade!
