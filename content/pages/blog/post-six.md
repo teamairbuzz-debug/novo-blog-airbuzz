@@ -1,15 +1,20 @@
 ---
-type: PostLayout 
+type: PostLayout
 title: "Conheça Tay: transformando sonhos em realidade em cada evento"
 colors: colors-b
 date: '2025-12-08'
 author: content/data/team/team-airbuzz.json
 excerpt: Olá! O Airbuzz tem o prazer de apresentar Tay, uma profissional especializada em decoração que encanta a todos com sua criatividade e talento.
-featuredImage:
+
+# BLOCO DE MÍDIA 0 PARA A IMAGEM DE DESTAQUE (CHAMADO APÓS INTRODUÇÃO)
+media0:
   type: ImageBlock
   url: /images/tay-decoracao-destaque.jpg
   altText: Designer de eventos Tay em uma decoração de festa
-media1: 
+  elementId: media0
+  caption: ''
+
+media1:
   url: /images/tay-decoracao-exemplo.jpg
   altText: Exemplo de decoração sofisticada de Tay para casamento
   caption: A criatividade de Tay transforma qualquer espaço em um cenário de sonhos.
@@ -40,6 +45,8 @@ bottomSections:
 ---
 
 Olá! Hoje o [Airbuzz](https://airbuzz.co/) está animado em apresentar a vocês uma profissional especializada em decoração de casamentos e festas de aniversário que tem encantado a todos com sua criatividade e talento: **Tay**. Neste blog, mergulharemos no mundo mágico de Tay, descobrindo como ela transforma sonhos em realidade através de suas decorações encantadoras.
+
+{{% include media0 %}}
 
 ### Criando Memórias Inesquecíveis
 
