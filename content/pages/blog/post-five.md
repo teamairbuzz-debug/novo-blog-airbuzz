@@ -9,18 +9,12 @@ featuredImage:
   type: ImageBlock
   url: /images/aniversario-dayuse-destaque.jpg # URL da imagem de destaque
   altText: Festa de aniversário em casa moderna com piscina
-media1: # Imagem da festa na casa da Barra
+media: # Imagem da festa na casa da Barra
   url: /images/barra-tijuca-aniversario.jpg 
   altText: Festa de aniversário na Barra da Tijuca, Rio de Janeiro
   caption: Casa na Barra da Tijuca, alugada por Day Use, cenário de uma linda festa.
-  elementId: media1
+  elementId: media
   type: ImageBlock
-media2: # Vídeo de melhores momentos
-  url: 'https://www.youtube.com/watch?v=SEU_LINK_DO_VIDEO_AQUI' # SUBSTITUIR pelo link do vídeo
-  altText: Melhores momentos da festa de aniversário
-  caption: Assista aos melhores momentos da festa Day Use!
-  elementId: media2
-  type: VideoBlock # Usando VideoBlock para o vídeo
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
@@ -68,11 +62,9 @@ Felizmente, hoje existem novas opções de espaço para celebrar uma festa de an
 
 Com o **Day Use** é possível alugar espaços externos de casas ou casas inteiras durante o dia, assim como em plataformas de aluguel de temporada, mas **sem pernoite**. Ou seja, você realiza sua festa em um local incrível **pagando menos**!
 
-{{% include media1 %}}
 
 Esta linda casa na Barra da Tijuca, por exemplo, foi cenário para uma linda festa de aniversário em bairro nobre do Rio de Janeiro. O aniversariante optou por alugar a casa inteira, o que saiu por apenas **R$20 por pessoa**. Um valor muito mais em conta do que alugar uma casa de festas totalmente impessoal onde você ainda tem que gastar uma grana com decoração.
 
-{{% include media2 %}}
 
 ### Vantagens de Alugar no Airbuzz
 
