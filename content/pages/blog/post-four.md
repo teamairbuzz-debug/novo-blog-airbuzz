@@ -53,7 +53,7 @@ bottomSections:
 Olá! Hoje o [Airbuzz](https://airbuzz.co/) está animado em apresentar a vocês uma profissional especializada em decoração de casamentos e festas de aniversário que tem encantado a todos com sua criatividade e talento: **Tay**. Neste blog, mergulharemos no mundo mágico de Tay, descobrindo como ela transforma sonhos em realidade através de suas decorações encantadoras.
 
 
-{{% include media0 %}}
+{{% include media1 %}}
 
 
 
