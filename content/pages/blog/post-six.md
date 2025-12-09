@@ -1,5 +1,5 @@
 ---
-type: PostLayout
+type: PostLayout 
 title: "Conheça Tay: transformando sonhos em realidade em cada evento"
 colors: colors-b
 date: '2025-12-08'
