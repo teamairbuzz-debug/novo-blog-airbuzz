@@ -1,24 +1,35 @@
 ---
 type: PostLayout
-title: A escolha do local para um ensaio fotográfico perfeito
-colors: colors-a
-date: '2025-04-25'
+title: "Conheça Tay: transformando sonhos em realidade em cada evento"
+colors: colors-b
+date: '2025-12-08'
 author: content/data/team/team-airbuzz.json
-excerpt: Estúdios tradicionais perdem território para casas autênticas nas campanhas de marketing.
+excerpt: Olá! O Airbuzz tem o prazer de apresentar Tay, uma profissional especializada em decoração que encanta a todos com sua criatividade e talento.
+
+# CAMPO CORRIGIDO: REINTRODUÇÃO DO featuredImage
 featuredImage:
   type: ImageBlock
-  url: /images/ensaio-foto.jpg # URL da sua imagem de destaque
-  altText: Local ideal para ensaio fotográfico
-media:
-  url: /images/ensaio-foto.jpg # URL da imagem que você quer adicionar no meio do texto
-  altText: Cenário autêntico para campanha de marketing
-  caption: Casas com personalidade trazem autenticidade às campanhas.
-  elementId: ''
+  url: /images/tay-decoracao-destaque.jpg
+  altText: Designer de eventos Tay em uma decoração de festa
+  
+# BLOCO DE MÍDIA 0 (PARA EXIBIR A IMAGEM DENTRO DO POST)
+media0:
+  type: ImageBlock
+  url: /images/tay-decoracao-destaque.jpg
+  altText: Designer de eventos Tay em uma decoração de festa
+  elementId: media0
+  caption: ''
+
+media1:
+  url: /images/tay-decoracao-exemplo.jpg
+  altText: Exemplo de decoração sofisticada de Tay para casamento
+  caption: A criatividade de Tay transforma qualquer espaço em um cenário de sonhos.
+  elementId: media1
   type: ImageBlock
 bottomSections:
   - elementId: ''
     type: RecentPostsSection
-    colors: colors-f # Fundo Laranja/Azul na seção de posts recentes
+    colors: colors-f
     variant: variant-d
     subtitle: Posts Recentes
     showDate: true
@@ -39,24 +50,34 @@ bottomSections:
     showReadMoreLink: true
 ---
 
-Sabe aquela casa que tem aquele algo extra que a torna inesquecível?
+Olá! Hoje o [Airbuzz](https://airbuzz.co/) está animado em apresentar a vocês uma profissional especializada em decoração de casamentos e festas de aniversário que tem encantado a todos com sua criatividade e talento: **Tay**. Neste blog, mergulharemos no mundo mágico de Tay, descobrindo como ela transforma sonhos em realidade através de suas decorações encantadoras.
 
-O sucesso de um ensaio fotográfico, ou até mesmo de uma gravação de um filme, clipe ou reportagem, depende muito da escolha do local perfeito. Não é qualquer lugar que vai dar certo, não! Uma equipe de marketing competente dedica tempo para fazer uma pesquisa detalhada sobre os objetivos da campanha, do público alvo, da mensagem a ser passada, e é claro, do cenário ideal, que passa pelo estilo arquitetônico, paisagismo até a decoração. Não é à toa que dizem que a perfeição está nos detalhes!
+{{% include media0 %}}
 
-O mundo está mudando, a sociedade e o mercado também. As top models da década de 80 precisavam se encaixar em um padrão de beleza ditado pela moda. O mercado de hoje quer todos os biotipos. A busca é por personalidade e autenticidade! Assim como os astros das telenovelas foram substituídos por influenciadores digitais, hoje quem tem o maior número de seguidores nas redes sociais é quem interessa às grandes marcas. Pessoas comuns são os novos astros! A mudança também aconteceu nos cenários das gravações e ensaios fotográficos. Já que, quem protagoniza é uma mulher comum e autêntica, porque não fotografá-la em uma casa ao invés de um mero estúdio?
+### Criando Memórias Inesquecíveis
 
-Existem as casas de praia em estilo bem tropical, que trazem sensação de frescor e natureza típicos das casas litorâneas; casas de fazenda de estilo colonial que remetem ao aconchego, conforto e tranquilidade da vida rústica no campo; casas modernas e contemporâneas com linhas retas e traços minimalistas; as casas de estilo cottage, pequenas e muito convidativas que você sente vontade de chamar de “lar, doce lar”; as casas de estilo mediterrâneo caracterizadas pelo charme do litoral da Espanha, Itália e Grécia, com o uso do branco para pintura das paredes, amplos terraços e jardins, além do uso de revestimentos cerâmicos.
+Tay é uma verdadeira artista quando se trata de decorar eventos e festas. Seu objetivo é criar memórias inesquecíveis para seus clientes, proporcionando uma experiência visualmente deslumbrante que reflete a personalidade e o estilo de cada ocasião. Cada decoração é cuidadosamente planejada e executada com atenção aos detalhes, resultando em um ambiente que transcende as expectativas e encanta a todos.
 
-Mas como faço para encontrar casas bonitas e disponíveis para sessões de fotos? Deixe a Katia Leão, dona da marca de acessórios Andoria, contar como ela conseguiu organizar, num estalar de dedos, seu último ensaio fotográfico em uma casa encantadora no Rio de Janeiro.
+### Criatividade e Originalidade
 
-> “Eu estava procurando um cenário especial para a minha próxima campanha do Dia das Mães protagonizada por uma mãe e uma filha. Era bastante difícil, pois todas as casas bonitas que eu encontrava no Airbnb ou outros sites de curta temporada tinham um mínimo de aluguel de 3 diárias. Puxa, não cabia no meu orçamento… :-)”
-> 
-> Foi aí que o fotógrafo Leonardo Talarico e a diretora artística da campanha, Amandha Monteiro, me falaram de sites de aluguel de casas em day use como solução perfeita para um dia só de fotos.
+Uma das características mais impressionantes do trabalho de Tay é sua criatividade e originalidade. Ela está sempre em busca de novas tendências e ideias inovadoras para trazer um toque único a cada decoração. Seja um tema específico, uma paleta de cores personalizada ou uma ideia fora do comum, Tay é capaz de transformar qualquer conceito em realidade, criando ambientes que deixam todos maravilhados.
 
-“Encontramos a casa perfeita para a campanha do Dia das Mães da Andoria na plataforma [Airbuzz](https://airbuzz.co/). A casa era muito acolhedora, com sua grande sala integrada à varanda com teto de vidro, mesclando o calor da madeira ao estilo moderno. Aproveitamos muito do grande jardim e do deck da piscina.” conta Amandha Monteiro.
+{{% include media1 %}}
 
-“Quando vimos aquela parede de tijolinhos rústicos em cor terracota com uma grande mesa de madeira de demolição, vimos de cara um cenário perfeito: um momento de carinho entre mãe e filha deitadas naquela mesa. Utilizamos apenas a sala, o jardim, a piscina e o espaço gourmet, assim os proprietários nem tiveram que sair de casa!” acrescenta Leonardo Talarico.
+### Atendimento Personalizado e Versatilidade
 
-Assista ao [Making of dessa linda campanha que teve ensaio fotográfico com duração de 5 horas em casa alugada em Day Use.](https://www.instagram.com/p/CN2VBaDJ9hV/?utm_source=ig_web_copy_link)
+Tay acredita que cada cliente é único e merece uma atenção personalizada. Desde o primeiro contato até a finalização do evento, ela se dedica a entender as necessidades e desejos de seus clientes, garantindo que cada detalhe seja cuidadosamente planejado e executado.
 
-Descubra essa e outras centenas de casas disponíveis para locação em Day Use na plataforma [Airbuzz](https://airbuzz.co/). Cada uma com seu toque especial que podem tornar seu ensaio fotográfico inesquecível!
+Não importa o tema ou estilo desejado, Tay possui a habilidade de adaptar sua criatividade para atender às preferências de cada cliente. Desde festas temáticas cheias de fantasia até decorações mais elegantes e sofisticadas, ela consegue trazer à vida qualquer conceito, adicionando toques especiais e elementos decorativos que fazem toda a diferença.
+
+### Transformando Sonhos em Realidade
+
+Tay é verdadeiramente apaixonada por transformar sonhos em realidade. Ela entende que cada evento é único e especial, e sua missão é criar uma atmosfera mágica que envolva todos os presentes. Com sua dedicação, talento e atenção aos detalhes, Tay consegue fazer com que cada celebração seja uma experiência memorável e encantadora.
+
+### Conclusão e Parceria Airbuzz
+
+Se você está procurando uma profissional especializada em decoração de eventos e festas de aniversário que possa transformar seus sonhos em realidade, Tay é a escolha perfeita.
+
+E aqui vai uma ótima notícia: **Tay agora é parceira do Airbuzz!**
+
+Isso significa que você pode contar com a expertise e talento em decoração de Tay nas casas que você aluga para eventos através do [Airbuzz](https://airbuzz.co/). Juntos, estamos comprometidos em tornar cada festa uma experiência visualmente deslumbrante e memorável. Prepare-se para vivenciar a mágica da parceria entre Tay e o Airbuzz, transformando seus sonhos em realidade!
