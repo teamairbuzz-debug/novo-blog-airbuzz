@@ -13,7 +13,6 @@
                 "label": "Site Oficial",
                 "url": "https://airbuzz.co/"
             },
-
             {
                 "type": "Link",
                 "label": "Blog",
@@ -27,13 +26,6 @@
                 "label": "Instagram",
                 "url": "https://www.instagram.com/airbuzz.casas.sitios/",
                 "icon": "instagram"
-            },
-            {
-                "type": "Social",
-                "altText": "WhatsApp Airbuzz",
-                "label": "WhatsApp",
-                "url": "https://wa.me/5521980736600",
-                "icon": "whatsapp"
             }
         ],
         "styles": {
