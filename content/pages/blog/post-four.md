@@ -6,13 +6,13 @@ date: '2025-12-08'
 author: content/data/team/team-airbuzz.json
 excerpt: Olá! O Airbuzz tem o prazer de apresentar Tay, uma profissional especializada em decoração que encanta a todos com sua criatividade e talento.
 
-# CAMPO CORRIGIDO: REINTRODUÇÃO DO featuredImage
+# CAMPO CORRIGIDO: REINTRODUÇÃO DO featuredImage (Para a lista de posts)
 featuredImage:
   type: ImageBlock
   url: /images/tay-decoracao-destaque.jpg
   altText: Designer de eventos Tay em uma decoração de festa
   
-# BLOCO DE MÍDIA 0 (PARA EXIBIR A IMAGEM DENTRO DO POST)
+# BLOCO DE MÍDIA 0 (PARA EXIBIR A IMAGEM DENTRO DO POST - DESTAQUE)
 media0:
   type: ImageBlock
   url: /images/tay-decoracao-destaque.jpg
@@ -52,10 +52,7 @@ bottomSections:
 
 Olá! Hoje o [Airbuzz](https://airbuzz.co/) está animado em apresentar a vocês uma profissional especializada em decoração de casamentos e festas de aniversário que tem encantado a todos com sua criatividade e talento: **Tay**. Neste blog, mergulharemos no mundo mágico de Tay, descobrindo como ela transforma sonhos em realidade através de suas decorações encantadoras.
 
-
-{{% include media1 %}}
-
-
+{{% include media0 %}} 
 
 ### Criando Memórias Inesquecíveis
 
@@ -65,9 +62,7 @@ Tay é uma verdadeira artista quando se trata de decorar eventos e festas. Seu o
 
 Uma das características mais impressionantes do trabalho de Tay é sua criatividade e originalidade. Ela está sempre em busca de novas tendências e ideias inovadoras para trazer um toque único a cada decoração. Seja um tema específico, uma paleta de cores personalizada ou uma ideia fora do comum, Tay é capaz de transformar qualquer conceito em realidade, criando ambientes que deixam todos maravilhados.
 
-
-{{% include media1 %}}
-
+{{% include media1 %}} 
 
 ### Atendimento Personalizado e Versatilidade
 
