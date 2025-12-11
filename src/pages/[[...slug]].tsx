@@ -13,6 +13,9 @@ const Page: React.FC<PageComponentProps> = (props) => {
     const metaTags = seoGenerateMetaTags(page, site);
     const metaDescription = seoGenerateMetaDescription(page, site);
 
+    // Variável para a URL base do seu blog. Altere 'blog-airbuzz.netlify.app' se o seu domínio final for outro.
+    const BASE_DOMAIN = 'blog-airbuzz.netlify.app';
+
     return (
         <>
             <Head>
@@ -26,6 +29,12 @@ const Page: React.FC<PageComponentProps> = (props) => {
                     return <meta key={metaTag.property} name={metaTag.property} content={metaTag.content} />;
                 })}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                
+                {/* 🚨 CORREÇÃO DE SEO: INJETAR CANONICAL TAG 🚨 */}
+                {page.__metadata && page.__metadata.urlPath && (
+                    <link rel="canonical" href={`https://${BASE_DOMAIN}${page.__metadata.urlPath}`} />
+                )}
+                
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
             <DynamicComponent {...props} />
