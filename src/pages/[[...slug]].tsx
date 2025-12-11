@@ -14,7 +14,7 @@ const Page: React.FC<PageComponentProps> = (props) => {
     const metaDescription = seoGenerateMetaDescription(page, site);
 
     // Variável para a URL base do seu blog. Altere 'blog-airbuzz.netlify.app' se o seu domínio final for outro.
-    const BASE_DOMAIN = 'blog-airbuzz.netlify.app';
+    const BASE_DOMAIN = 'blog-airbuzz.netlify.app/blog';
 
     return (
         <>
