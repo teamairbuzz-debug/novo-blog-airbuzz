@@ -1,58 +1,109 @@
+import React from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+// Importe aqui todos os seus outros componentes (Layout, Header, PostContent, etc.)
+// Ex: import Layout from '../../components/Layout'; 
+// Ex: import { getPostData, getAllPostSlugs } from '../../lib/posts'; 
 
-import { DynamicComponent } from '@/components/components-registry';
-import { PageComponentProps } from '@/types';
-import { allContent } from '@/utils/content';
-import { seoGenerateMetaDescription, seoGenerateMetaTags, seoGenerateTitle } from '@/utils/seo-utils';
-import { resolveStaticProps } from '@/utils/static-props-resolvers';
+// Defina a interface (tipo) para as props que a sua página recebe
+interface PostPageProps {
+  postData: {
+    title: string;
+    slug: string;
+    // Adicione aqui outros campos do seu post (content, date, etc.)
+  };
+  // Adicione outras props se houver
+}
 
-const Page: React.FC<PageComponentProps> = (props) => {
-    const { global, ...page } = props;
-    const { site } = global;
-    const title = seoGenerateTitle(page, site);
-    const metaTags = seoGenerateMetaTags(page, site);
-    const metaDescription = seoGenerateMetaDescription(page, site);
+// O componente principal da sua página
+const BlogPage: React.FC<PostPageProps> = ({ postData }) => {
+  const router = useRouter();
+  
+  // ⚠️ AJUSTE AQUI: Como obter o slug (o caminho da URL)
+  // ----------------------------------------------------
+  // Opção 1: Se o slug já vem diretamente nas props:
+  const postSlug = postData.slug; 
+  
+  // Opção 2: Se você precisa construir o caminho baseado no router (menos ideal para SSG/SSR):
+  // const postPath = router.asPath; 
+  // const postSlug = postPath.split('/').pop() || postData.slug;
+  // ----------------------------------------------------
 
-    // Variável para a URL base do seu blog. Altere 'blog-airbuzz.netlify.app' se o seu domínio final for outro.
-    const BASE_DOMAIN = 'blog-airbuzz.netlify.app/blog';
+  // Construção da URL Canônica (OBRIGATÓRIA)
+  // Garante que o domínio seja o oficial (blog.airbuzz.co) e que inclua o /blog/
+  const canonicalUrl = `https://blog.airbuzz.co/blog/${postSlug}`;
 
-    return (
-        <>
-            <Head>
-                <title>{title}</title>
-                {metaDescription && <meta name="description" content={metaDescription} />}
-                {metaTags.map((metaTag) => {
-                    if (metaTag.format === 'property') {
-                        // OpenGraph meta tags (og:*) should be have the format <meta property="og:…" content="…">
-                        return <meta key={metaTag.property} property={metaTag.property} content={metaTag.content} />;
-                    }
-                    return <meta key={metaTag.property} name={metaTag.property} content={metaTag.content} />;
-                })}
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                
-                {/* 🚨 CORREÇÃO DE SEO: INJETAR CANONICAL TAG 🚨 */}
-                {page.__metadata && page.__metadata.urlPath && (
-                    <link rel="canonical" href={`https://${BASE_DOMAIN}${page.__metadata.urlPath}`} />
-                )}
-                
-                {site.favicon && <link rel="icon" href={site.favicon} />}
-            </Head>
-            <DynamicComponent {...props} />
-        </>
-    );
+  // Se você tiver dados de post insuficientes (por exemplo, página 404), lide com isso primeiro
+  if (router.isFallback) {
+    return <div>Carregando...</div>;
+  }
+  if (!postData) {
+    // Isso deve retornar sua página 404 customizada
+    return <h1>Página não encontrada</h1>; 
+  }
+
+  return (
+    // O seu componente de layout principal
+    // Ex: <Layout> 
+    <>
+      {/* 🟢 INJEÇÃO DA TAG CANÔNICA (CRÍTICO PARA SEO) */}
+      <Head>
+        <title>{postData.title} | Blog Airbuzz</title>
+        
+        {/* A TAG CANÔNICA */}
+        <link rel="canonical" href={canonicalUrl} key="canonical" />
+        
+        {/* Outras meta tags de descrição, redes sociais, etc. */}
+        {/* <meta name="description" content={postData.excerpt} /> */}
+      </Head>
+
+      {/* Seu conteúdo principal do post */}
+      <article>
+        <h1>{postData.title}</h1>
+        {/* Renderize o conteúdo do postData aqui */}
+        <div>Conteúdo do Post...</div>
+      </article>
+      
+    </>
+    // Ex: </Layout>
+  );
 };
 
-export function getStaticPaths() {
-    const allData = allContent();
-    const paths = allData.map((obj) => obj.__metadata.urlPath).filter(Boolean);
-    return { paths, fallback: false };
-}
 
-export function getStaticProps({ params }) {
-    const allData = allContent();
-    const urlPath = '/' + (params.slug || []).join('/');
-    const props = resolveStaticProps(urlPath, allData);
-    return { props };
-}
+// ⚠️ FUNÇÕES DE FETCH DE DADOS (getStaticProps e getStaticPaths)
+// -------------------------------------------------------------
+// Estas funções são CRUCIAIS no Next.js para buscar os dados no momento da compilação (SSG)
+/*
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+    // Exemplo: Buscar dados do post baseado no slug
+    const slug = params.slug?.join('/') || '';
+    const postData = await getPostData(slug); 
 
-export default Page;
+    if (!postData) {
+        return { notFound: true };
+    }
+
+    return {
+        props: {
+            postData,
+        },
+        revalidate: 60, // Opcional: Revalidação para atualizar o post
+    };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+    // Exemplo: Obter todos os slugs para que o Next.js saiba quais páginas buildar
+    const slugs = await getAllPostSlugs(); 
+    const paths = slugs.map((slug) => ({
+        params: { slug: slug.split('/') },
+    }));
+
+    return {
+        paths,
+        fallback: true, 
+    };
+};
+*/
+// -------------------------------------------------------------
+
+export default BlogPage;
