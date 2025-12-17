@@ -31,8 +31,8 @@ const Page: React.FC<PageComponentProps> = (props) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 
                 {/* 🚨 CORREÇÃO DE SEO: INJETAR CANONICAL TAG 🚨 */}
-                {page._metadata && page._metadata.urlPath && (
-                    <link rel="canonical" href={https://${BASE_DOMAIN}${page.__metadata.urlPath}} />
+                {page.__metadata && page.__metadata.urlPath && (
+                    <link rel="canonical" href={`https://${BASE_DOMAIN}${page.__metadata.urlPath}`} />
                 )}
                 
                 {site.favicon && <link rel="icon" href={site.favicon} />}
