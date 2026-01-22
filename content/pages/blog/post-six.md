@@ -11,7 +11,7 @@ featuredImage:
   altText: Praia da Barra da Tijuca com prédios ao fundo
 media:
   type: ImageBlock
-  url: /images/mansao-barra-grupos.png
+  url: /images/barra-destino-turistico.png
   altText: Mansão na Barra da Tijuca com piscina para grupos
   caption: Imóvel na Barra da Tijuca ideal para hospedagem de grupos e eventos.
   elementId: media
