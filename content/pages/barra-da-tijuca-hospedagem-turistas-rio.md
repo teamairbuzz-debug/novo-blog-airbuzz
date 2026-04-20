@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: "Barra da Tijuca se consolida como principal escolha de hospedagem para turistas que retornam ao Rio"
-metaTitle: Barra da Tijuca: nova preferência de hospedagem para turistas no Rio | Airbuzz
+metaTitle: "Barra da Tijuca: nova preferência de hospedagem para turistas no Rio | Airbuzz"
 metaDescription: Turistas que já conhecem a Zona Sul estão escolhendo a Barra da Tijuca em novas visitas ao Rio. Saiba por que e como encontrar casas para grupos com Day Use na região.
 colors: colors-b
 date: '2026-01-22'
