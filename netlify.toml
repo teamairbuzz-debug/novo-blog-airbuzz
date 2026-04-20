@@ -4,3 +4,168 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# REDIRECTS 301 — Blogger → Novo Blog (URLs sem /blog/)
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Posts com correspondência direta — Blogger → nova URL
+[[redirects]]
+  from = "/2021/04/encontraro-local-ideal-para-gravacao-lives-clipes.html"
+  to   = "/local-ideal-gravacao-lives-clipes/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2021/04/a-escolha-do-local-para-um-ensaio-fotografico-perfeito.html"
+  to   = "/local-ensaio-fotografico-perfeito/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2021/04/churrasco-em-familia-e-amigos-dentro-do-orcamento.html"
+  to   = "/churrasco-familia-amigos-menor-custo/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2023/05/tay-eventos-decoracao.html"
+  to   = "/conheca-tay-decoracao-eventos/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2021/04/comemore-seu-aniversario-pagando-muito.html"
+  to   = "/comemore-aniversario-day-use/"
+  status = 301
+  force  = true
+
+# Posts do Blogger sem equivalente → homepage do blog
+[[redirects]]
+  from = "/2023/05/buffet.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2023/05/banda.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2023/05/churrasqueiro.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2021/04/como-encontrar-lugares-exclusivos-para-evento-corporativo.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/2021/04/confraternize-com-sua-familia-amigos-barato.html"
+  to   = "/"
+  status = 301
+  force  = true
+
+# Redirects dos slugs provisórios /blog/post-* (versões anteriores do novo blog)
+[[redirects]]
+  from = "/blog/post-one/"
+  to   = "/local-ideal-gravacao-lives-clipes/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/post-two/"
+  to   = "/local-ensaio-fotografico-perfeito/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/post-three/"
+  to   = "/churrasco-familia-amigos-menor-custo/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/post-four/"
+  to   = "/conheca-tay-decoracao-eventos/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/post-five/"
+  to   = "/comemore-aniversario-day-use/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/post-six/"
+  to   = "/barra-da-tijuca-hospedagem-turistas-rio/"
+  status = 301
+  force  = true
+
+# Redirects dos slugs SEO com prefixo /blog/ (versão anterior)
+[[redirects]]
+  from = "/blog/local-ideal-gravacao-lives-clipes/"
+  to   = "/local-ideal-gravacao-lives-clipes/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/local-ensaio-fotografico-perfeito/"
+  to   = "/local-ensaio-fotografico-perfeito/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/churrasco-familia-amigos-menor-custo/"
+  to   = "/churrasco-familia-amigos-menor-custo/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/conheca-tay-decoracao-eventos/"
+  to   = "/conheca-tay-decoracao-eventos/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/comemore-aniversario-day-use/"
+  to   = "/comemore-aniversario-day-use/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/blog/barra-da-tijuca-hospedagem-turistas-rio/"
+  to   = "/barra-da-tijuca-hospedagem-turistas-rio/"
+  status = 301
+  force  = true
+
+# Padrões de URL do Blogger
+[[redirects]]
+  from = "/search/label/*"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/search"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/search/*"
+  to   = "/"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/feeds/*"
+  to   = "/"
+  status = 301
+  force  = true
