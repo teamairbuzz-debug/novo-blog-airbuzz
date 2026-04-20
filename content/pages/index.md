@@ -2,7 +2,7 @@
 type: PostFeedLayout
 title: "Casas para Day Use, Eventos e Hospedagem em Grupo | Dicas Airbuzz"
 metaTitle: "Casas para Day Use, Eventos e Hospedagem em Grupo | Dicas Airbuzz"
-metaDescription: Descubra casas para day use, eventos, festas, ensaios e gravações, além de hospedagem em grupo. Inspire-se com dicas práticas no blog da Airbuzz.
+metaDescription: Encontre casas para day use, festas, eventos, retiros e viagens em grupo. Veja dicas práticas para escolher o espaço ideal.
 colors: colors-b
 postFeed:
   type: PostFeedSection
@@ -24,7 +24,7 @@ postFeed:
 topSections:
   - type: HeroSection
     title: Casas para Day Use, Eventos e Hospedagem em Grupo
-    subtitle: Descubra casas para day use, eventos, festas, ensaios e gravações, além de hospedagem em grupo. Inspire-se com dicas práticas no blog da Airbuzz.
+    subtitle: Festas, gravações, retiros e viagens em grupo: veja como escolher a casa ideal.
     actions: []
     colors: colors-b
     backgroundSize: full
