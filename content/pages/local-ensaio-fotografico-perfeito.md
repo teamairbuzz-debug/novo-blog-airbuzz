@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: A escolha do local para um ensaio fotográfico perfeito
-metaTitle: Como escolher o local ideal para ensaio fotográfico | Airbuzz
+metaTitle: "Como escolher o local ideal para ensaio fotográfico | Airbuzz"
 metaDescription: Casas autênticas superam estúdios tradicionais em ensaios fotográficos. Saiba como alugar o cenário perfeito para sua campanha de marketing via Day Use na Airbuzz.
 colors: colors-a
 date: '2025-04-25'
