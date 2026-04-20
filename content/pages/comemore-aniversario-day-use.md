@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: "Comemore seu aniversário pagando muito menos: Dicas de Day Use"
-metaTitle: Festa de aniversário barata e incrível com Day Use | Airbuzz
+metaTitle: "Festa de aniversário barata e incrível com Day Use | Airbuzz"
 metaDescription: Saiba como alugar uma casa ou área externa por Day Use para sua festa de aniversário pagando muito menos. Espaços privativos, sem vínculo de fornecedores e com liberdade total.
 colors: colors-b
 date: '2025-04-25'
