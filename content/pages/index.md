@@ -24,7 +24,7 @@ postFeed:
 topSections:
   - type: HeroSection
     title: Casas para Day Use, Eventos e Hospedagem em Grupo
-    subtitle: Festas, gravações, retiros e viagens em grupo: veja como escolher a casa ideal.
+    subtitle: "Festas, gravações, retiros e viagens em grupo: veja como escolher a casa ideal."
     actions: []
     colors: colors-b
     backgroundSize: full
