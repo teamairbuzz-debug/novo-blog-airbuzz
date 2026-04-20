@@ -23,8 +23,8 @@ postFeed:
         - pb-12
 topSections:
   - type: HeroSection
-    title: Casas para Day Use, Eventos e Hospedagem em Grupo no Brasil
-    subtitle: Descubra casas para day use, eventos e hospedagem em grupo, com dicas práticas e inspirações da Airbuzz.
+    title: Casas para Day Use, Eventos e Hospedagem em Grupo
+    subtitle: Descubra casas para day use, eventos, festas, ensaios e gravações, além de hospedagem em grupo. Inspire-se com dicas práticas no blog da Airbuzz.
     actions: []
     colors: colors-b
     backgroundSize: full
