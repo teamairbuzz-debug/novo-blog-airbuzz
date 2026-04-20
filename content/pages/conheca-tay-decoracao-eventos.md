@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: "Conheça Tay: transformando sonhos em realidade em cada evento"
-metaTitle: Tay Decoração de Eventos — Parceira Airbuzz | Casamentos e Festas
+metaTitle: "Tay Decoração de Eventos — Parceira Airbuzz | Casamentos e Festas"
 metaDescription: Conheça Tay, especialista em decoração de casamentos e festas de aniversário parceira do Airbuzz. Criatividade, personalização e atenção aos detalhes em cada evento.
 colors: colors-b
 date: '2025-12-08'
