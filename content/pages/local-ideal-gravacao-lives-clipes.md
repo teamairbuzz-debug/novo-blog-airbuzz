@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: Como encontrar o local ideal para gravação de lives e clipes
-metaTitle: Local ideal para gravação de lives e clipes | Airbuzz
+metaTitle: "Local ideal para gravação de lives e clipes | Airbuzz"
 metaDescription: Descubra como alugar mansões com jardim, piscina e cenários únicos para gravações de lives e clipes usando a modalidade Day Use da Airbuzz por muito menos.
 colors: colors-a
 date: '2025-04-25'
