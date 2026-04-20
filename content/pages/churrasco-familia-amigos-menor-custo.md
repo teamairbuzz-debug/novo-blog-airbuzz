@@ -1,7 +1,7 @@
 ---
 type: PostLayout
 title: Churrascos em família e amigos com mais lazer e menor custo
-metaTitle: Como fazer churrasco em família pagando menos com Day Use | Airbuzz
+metaTitle: "Como fazer churrasco em família pagando menos com Day Use | Airbuzz"
 metaDescription: Alugue uma área externa com churrasqueira, piscina e espaço gourmet por Day Use. Realize um churrasco incrível com família e amigos sem sair do orçamento.
 colors: colors-a
 date: '2025-06-04'
