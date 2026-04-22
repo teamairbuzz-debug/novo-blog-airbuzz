@@ -37,9 +37,10 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
         .filter((obj) => obj.__metadata?.urlPath)
         .map((obj) => {
             const isPost = obj.__metadata.modelName === 'PostLayout';
+            const date = 'date' in obj ? (obj as any).date : undefined;
             return {
                 path: obj.__metadata.urlPath as string,
-                lastMod: obj.date ? new Date(obj.date).toISOString().split('T')[0] : undefined,
+                lastMod: date ? new Date(date).toISOString().split('T')[0] : undefined,
                 priority: isPost ? '0.8' : obj.__metadata.urlPath === '/' ? '1.0' : '0.6',
                 changeFreq: isPost ? 'weekly' : 'monthly'
             };

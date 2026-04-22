@@ -144,8 +144,12 @@ const Page: React.FC<PageComponentProps> = (props) => {
 
     // og:image — prioriza featuredImage do post, depois defaultSocialImage do site
     const ogImage = (() => {
-        if (page.__metadata?.modelName === 'PostLayout' && page.featuredImage?.url) {
-            const img = page.featuredImage.url;
+        if (
+            page.__metadata?.modelName === 'PostLayout' &&
+            'featuredImage' in page &&
+            (page as any).featuredImage?.url
+        ) {
+            const img = (page as any).featuredImage.url as string;
             return img.startsWith('http') ? img : `${SITE_URL}${img}`;
         }
         if (site.defaultSocialImage) {
@@ -187,10 +191,10 @@ const Page: React.FC<PageComponentProps> = (props) => {
                 <meta property="og:locale" content={SITE_LOCALE} />
 
                 {/* Datas para artigos (Open Graph article) */}
-                {page.__metadata?.modelName === 'PostLayout' && page.date && (
+                {page.__metadata?.modelName === 'PostLayout' && 'date' in page && (page as any).date && (
                     <>
-                        <meta property="article:published_time" content={new Date(page.date).toISOString()} />
-                        <meta property="article:modified_time" content={new Date(page.date).toISOString()} />
+                        <meta property="article:published_time" content={new Date((page as any).date).toISOString()} />
+                        <meta property="article:modified_time" content={new Date((page as any).date).toISOString()} />
                         <meta property="article:author" content={SITE_NAME} />
                         <meta property="article:section" content="Blog" />
                     </>
