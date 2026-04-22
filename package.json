@@ -3,7 +3,7 @@
     "version": "0.2.0",
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
+        "build": "node scripts/generate-sitemap.js && next build",
         "start": "next start"
     },
     "dependencies": {
@@ -27,6 +27,7 @@
         "@types/react-syntax-highlighter": "^15.5.13",
         "eslint": "^9.21.0",
         "eslint-config-next": "^15.2.0",
+        "glob": "^10.3.10",
         "js-yaml": "^4.1.0",
         "postcss": "^8.5.3",
         "prettier": "^3.5.2",
