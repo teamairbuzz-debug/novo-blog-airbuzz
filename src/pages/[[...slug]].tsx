@@ -131,7 +131,8 @@ function buildJsonLd(page: any, site: any, canonicalUrl: string): string | null 
 // ─── COMPONENTE PRINCIPAL ─────────────────────────────────────────────────────
 
 const Page: React.FC<PageComponentProps> = (props) => {
-    const { global, ...page } = props;
+    const { global, ...rest } = props;
+    const page = rest as any;
     const { site } = global;
 
     const title = seoGenerateTitle(page, site);
