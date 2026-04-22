@@ -144,7 +144,7 @@ const Page: React.FC<PageComponentProps> = (props) => {
 
     // og:image — prioriza featuredImage do post, depois defaultSocialImage do site
     const ogImage = (() => {
-        if (page.__metadata?.modelName === 'PostLayout' && page.featuredImage?.url) {
+        if (page.type === 'PostLayout' && page.featuredImage?.url) {
             const img = page.featuredImage.url;
             return img.startsWith('http') ? img : `${SITE_URL}${img}`;
         }
@@ -187,7 +187,7 @@ const Page: React.FC<PageComponentProps> = (props) => {
                 <meta property="og:locale" content={SITE_LOCALE} />
 
                 {/* Datas para artigos (Open Graph article) */}
-                {page.__metadata?.modelName === 'PostLayout' && page.date && (
+                {page.type === 'PostLayout' && page.date && (
                     <>
                         <meta property="article:published_time" content={new Date(page.date).toISOString()} />
                         <meta property="article:modified_time" content={new Date(page.date).toISOString()} />
