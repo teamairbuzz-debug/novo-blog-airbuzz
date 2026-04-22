@@ -1,6 +1,26 @@
 {
     "type": "Config",
     "favicon": "/images/favicon_airbuzz.png",
+    "titleSuffix": " | Airbuzz",
+    "defaultSocialImage": "/images/og-default.jpg",
+    "defaultMetaTags": [
+        {
+            "property": "og:site_name",
+            "content": "Blog Airbuzz"
+        },
+        {
+            "property": "og:locale",
+            "content": "pt_BR"
+        },
+        {
+            "property": "twitter:card",
+            "content": "summary_large_image"
+        },
+        {
+            "property": "twitter:site",
+            "content": "@airbuzz_co"
+        }
+    ],
     "header": {
         "type": "Header",
         "headerVariant": "variant-c",
