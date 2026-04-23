@@ -1,14 +1,14 @@
-// scripts/generate-sitemap.js
-// Executado antes do next build para gerar public/sitemap.xml estático.
-// Compatível com trailingSlash: true do Next.js.
-
 const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
+const { globSync } = require('glob');
 const frontmatter = require('front-matter');
 
 const BASE_URL = 'https://blog.airbuzz.co';
 const PAGES_DIR = path.join(process.cwd(), 'content/pages');
+
+function today() {
+    return new Date().toISOString().split('T')[0];
+}
 
 function slugFromFile(filePath) {
     let url = filePath
@@ -21,7 +21,7 @@ function slugFromFile(filePath) {
     }
 
     if (url !== '/' && !url.endsWith('/')) {
-        url = url + '/';
+        url += '/';
     }
 
     return url;
@@ -33,7 +33,7 @@ function generateSitemap(urls) {
 ${urls
     .map(({ loc, lastmod, priority, changefreq }) => `  <url>
     <loc>${loc}</loc>
-    ${lastmod ? `<lastmod>${lastmod}</lastmod>` : ''}
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`)
@@ -43,40 +43,60 @@ ${urls
 
 function safeGenerate() {
     try {
-        // 🔥 1. Verificar se pasta existe
         if (!fs.existsSync(PAGES_DIR)) {
-            console.warn('⚠️ content/pages não encontrado. Gerando sitemap vazio.');
+            console.warn('⚠️ content/pages não encontrado.');
             return [];
         }
 
-        const files = glob.sync('**/*.md', { cwd: PAGES_DIR });
+        const files = globSync(path.join(PAGES_DIR, '**/*.md').replace(/\\/g, '/'));
 
         const urls = files
-            .map((file) => {
+            .map((filePath) => {
                 try {
-                    const filePath = path.join(PAGES_DIR, file);
                     const raw = fs.readFileSync(filePath, 'utf8');
                     const { attributes } = frontmatter(raw);
                     const slug = slugFromFile(filePath);
 
+                    // 🚫 Remover páginas irrelevantes do sitemap
+                    if (slug === '/info/') return null;
+
                     const isPost = attributes.type === 'PostLayout';
                     const isHome = slug === '/';
 
+                    let lastmod = today();
+
+                    if (attributes.date) {
+                        const date = new Date(attributes.date);
+                        if (!isNaN(date)) {
+                            lastmod = date.toISOString().split('T')[0];
+                        }
+                    }
+
                     return {
                         loc: `${BASE_URL}${slug}`,
-                        lastmod: attributes.date
-                            ? new Date(attributes.date).toISOString().split('T')[0]
-                            : undefined,
+                        lastmod,
                         priority: isHome ? '1.0' : isPost ? '0.8' : '0.6',
                         changefreq: isPost ? 'weekly' : 'monthly'
                     };
                 } catch (err) {
-                    console.warn('⚠️ Erro ao processar arquivo:', file);
+                    console.warn(`⚠️ Erro ao processar: ${filePath}`);
                     return null;
                 }
             })
             .filter(Boolean)
             .sort((a, b) => parseFloat(b.priority) - parseFloat(a.priority));
+
+        // ✅ Garantir home sempre presente
+        const hasHome = urls.find((u) => u.loc === `${BASE_URL}/`);
+
+        if (!hasHome) {
+            urls.unshift({
+                loc: `${BASE_URL}/`,
+                lastmod: today(),
+                priority: '1.0',
+                changefreq: 'monthly'
+            });
+        }
 
         return urls;
     } catch (err) {
@@ -90,9 +110,7 @@ const sitemap = generateSitemap(urls);
 
 const outputPath = path.join(process.cwd(), 'public', 'sitemap.xml');
 
-// 🔥 2. Garantir pasta public
 fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-
 fs.writeFileSync(outputPath, sitemap, 'utf8');
 
-console.log(`✅ sitemap.xml gerado com ${urls.length} URLs`);
+console.log(`✅ sitemap.xml atualizado com ${urls.length} URLs`);
