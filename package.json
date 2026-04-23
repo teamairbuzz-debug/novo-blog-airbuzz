@@ -3,7 +3,7 @@
     "version": "0.2.0",
     "scripts": {
         "dev": "next dev",
-        "build": "node scripts/generate-sitemap.js && next build",
+        "build": "node scripts/generate-sitemap.js || echo 'sitemap failed' && next build",
         "start": "next start"
     },
     "dependencies": {
