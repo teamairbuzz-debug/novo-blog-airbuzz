@@ -1,8 +1,6 @@
 User-agent: *
 Allow: /
 
-# Bloquear rotas internas desnecessárias para crawlers
 Disallow: /api/
-Disallow: /_next/
 
 Sitemap: https://blog.airbuzz.co/sitemap.xml
