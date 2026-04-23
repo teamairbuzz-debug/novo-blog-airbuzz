@@ -10,7 +10,7 @@ import { PAGE_MODEL_NAMES, PageModelType } from '@/types/generated';
 const contentBaseDir = 'content';
 const pagesBaseDir = contentBaseDir + '/pages';
 
-const allReferenceFields = {};
+const allReferenceFields: Record<string, boolean> = {};
 allModels.forEach((model) => {
     model.fields.forEach((field) => {
         if (field.type === 'reference' || (field.type === 'list' && field.items?.type === 'reference')) {
@@ -24,27 +24,42 @@ function isRefField(modelName: string, fieldName: string) {
 }
 
 const supportedFileTypes = ['md', 'json'];
-function contentFilesInPath(dir: string) {
-    const globPattern = `${dir}/**/*.{${supportedFileTypes.join(',')}}`;
-    return globSync(globPattern);
+
+function contentFilesInPath(dir: string): string[] {
+    try {
+        const absoluteDir = path.isAbsolute(dir) ? dir : path.join(process.cwd(), dir);
+
+        if (!fs.existsSync(absoluteDir)) {
+            console.warn(`[content] Directory not found: ${absoluteDir}`);
+            return [];
+        }
+
+        const globPattern = path.join(absoluteDir, `**/*.{${supportedFileTypes.join(',')}}`).replace(/\\/g, '/');
+        return globSync(globPattern);
+    } catch (error) {
+        console.warn('[content] Failed to read content files:', error);
+        return [];
+    }
 }
 
 function readContent(file: string): types.ContentObject {
     const rawContent = fs.readFileSync(file, 'utf8');
-    let content = null;
+    let content: any = null;
+
     switch (path.extname(file).substring(1)) {
-        case 'md':
+        case 'md': {
             const parsedMd = frontmatter<Record<string, any>>(rawContent);
             content = {
                 ...parsedMd.attributes,
                 markdownContent: parsedMd.body
             };
             break;
+        }
         case 'json':
             content = JSON.parse(rawContent);
             break;
         default:
-            throw Error(`Unhandled file type: ${file}`);
+            throw new Error(`Unhandled file type: ${file}`);
     }
 
     content.__metadata = {
@@ -62,24 +77,28 @@ function resolveReferences(content: types.ContentObject, fileToContent: Record<s
     if (!content.__metadata) content.__metadata = { modelName };
 
     for (const fieldName in content) {
-        let fieldValue = content[fieldName];
+        let fieldValue = content[fieldName as keyof typeof content];
         if (!fieldValue) continue;
 
         const isRef = isRefField(modelName, fieldName);
+
         if (Array.isArray(fieldValue)) {
             if (fieldValue.length === 0) continue;
+
             if (isRef && typeof fieldValue[0] === 'string') {
-                fieldValue = fieldValue.map((filename) => fileToContent[filename]);
-                content[fieldName] = fieldValue;
+                fieldValue = fieldValue.map((filename) => fileToContent[filename]).filter(Boolean);
+                (content as any)[fieldName] = fieldValue;
             }
+
             if (typeof fieldValue[0] === 'object') {
                 fieldValue.forEach((o) => resolveReferences(o, fileToContent));
             }
         } else {
             if (isRef && typeof fieldValue === 'string') {
                 fieldValue = fileToContent[fieldValue];
-                content[fieldName] = fieldValue;
+                (content as any)[fieldName] = fieldValue;
             }
+
             if (typeof fieldValue === 'object') {
                 resolveReferences(fieldValue, fileToContent);
             }
@@ -89,27 +108,45 @@ function resolveReferences(content: types.ContentObject, fileToContent: Record<s
 
 function contentUrl(obj: types.ContentObject) {
     const fileName = obj.__metadata.id;
-    if (!fileName.startsWith(pagesBaseDir)) {
+
+    const normalizedPagesBaseDir = pagesBaseDir.replace(/\\/g, '/');
+    const normalizedFileName = fileName.replace(/\\/g, '/');
+
+    if (!normalizedFileName.includes(normalizedPagesBaseDir)) {
         console.warn('Content file', fileName, 'expected to be a page, but is not under', pagesBaseDir);
         return;
     }
 
-    let url = fileName.slice(pagesBaseDir.length);
-    url = url.split('.')[0];
+    let url = normalizedFileName.slice(normalizedFileName.indexOf(normalizedPagesBaseDir) + normalizedPagesBaseDir.length);
+    url = url.replace(/\.(md|json)$/, '');
+
     if (url.endsWith('/index')) {
         url = url.slice(0, -6) || '/';
     }
+
     return url;
 }
 
 export function allContent(): types.ContentObject[] {
-    let objects = contentFilesInPath(contentBaseDir).map((file) => readContent(file));
+    let objects = contentFilesInPath(contentBaseDir)
+        .map((file) => {
+            try {
+                return readContent(file);
+            } catch (error) {
+                console.warn(`[content] Failed to parse file: ${file}`, error);
+                return null;
+            }
+        })
+        .filter(Boolean) as types.ContentObject[];
 
     allPages(objects).forEach((obj) => {
         obj.__metadata.urlPath = contentUrl(obj);
     });
 
-    const fileToContent: Record<string, types.ContentObject> = Object.fromEntries(objects.map((e) => [e.__metadata.id, e]));
+    const fileToContent: Record<string, types.ContentObject> = Object.fromEntries(
+        objects.map((e) => [e.__metadata.id, e])
+    );
+
     objects.forEach((e) => resolveReferences(e, fileToContent));
 
     objects = objects.map((e) => deepClone(e));
@@ -134,6 +171,7 @@ function annotateContentObject(o: any, prefix = '', depth = 0) {
     if (!isDev || !o || typeof o !== 'object' || !o.type || skipList.includes(prefix)) return;
 
     const depthPrefix = '--'.repeat(depth);
+
     if (depth === 0) {
         if (o.__metadata?.id) {
             o[types.objectIdAttr] = o.__metadata.id;
@@ -149,6 +187,7 @@ function annotateContentObject(o: any, prefix = '', depth = 0) {
     Object.entries(o).forEach(([k, v]) => {
         if (v && typeof v === 'object') {
             const fieldPrefix = (prefix ? prefix + '.' : '') + k;
+
             if (Array.isArray(v)) {
                 v.forEach((e, idx) => {
                     const elementPrefix = fieldPrefix + '.' + idx;
