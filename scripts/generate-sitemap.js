@@ -19,10 +19,11 @@ function slugFromFile(filePath) {
     if (url.endsWith('/index')) {
         url = url.slice(0, -6) || '/';
     }
-    // Garantir trailing slash
+
     if (url !== '/' && !url.endsWith('/')) {
         url = url + '/';
     }
+
     return url;
 }
 
@@ -40,34 +41,58 @@ ${urls
 </urlset>`;
 }
 
-// Ler todos os arquivos .md em content/pages/
-const files = glob.sync('**/*.md', { cwd: PAGES_DIR });
+function safeGenerate() {
+    try {
+        // 🔥 1. Verificar se pasta existe
+        if (!fs.existsSync(PAGES_DIR)) {
+            console.warn('⚠️ content/pages não encontrado. Gerando sitemap vazio.');
+            return [];
+        }
 
-const urls = files
-    .map((file) => {
-        const filePath = path.join(PAGES_DIR, file);
-        const raw = fs.readFileSync(filePath, 'utf8');
-        const { attributes } = frontmatter(raw);
-        const slug = slugFromFile(filePath);
+        const files = glob.sync('**/*.md', { cwd: PAGES_DIR });
 
-        const isPost = attributes.type === 'PostLayout';
-        const isHome = slug === '/';
+        const urls = files
+            .map((file) => {
+                try {
+                    const filePath = path.join(PAGES_DIR, file);
+                    const raw = fs.readFileSync(filePath, 'utf8');
+                    const { attributes } = frontmatter(raw);
+                    const slug = slugFromFile(filePath);
 
-        return {
-            loc: `${BASE_URL}${slug}`,
-            lastmod: attributes.date
-                ? new Date(attributes.date).toISOString().split('T')[0]
-                : undefined,
-            priority: isHome ? '1.0' : isPost ? '0.8' : '0.6',
-            changefreq: isPost ? 'weekly' : 'monthly'
-        };
-    })
-    .sort((a, b) => parseFloat(b.priority) - parseFloat(a.priority));
+                    const isPost = attributes.type === 'PostLayout';
+                    const isHome = slug === '/';
 
+                    return {
+                        loc: `${BASE_URL}${slug}`,
+                        lastmod: attributes.date
+                            ? new Date(attributes.date).toISOString().split('T')[0]
+                            : undefined,
+                        priority: isHome ? '1.0' : isPost ? '0.8' : '0.6',
+                        changefreq: isPost ? 'weekly' : 'monthly'
+                    };
+                } catch (err) {
+                    console.warn('⚠️ Erro ao processar arquivo:', file);
+                    return null;
+                }
+            })
+            .filter(Boolean)
+            .sort((a, b) => parseFloat(b.priority) - parseFloat(a.priority));
+
+        return urls;
+    } catch (err) {
+        console.error('❌ Erro geral no sitemap:', err);
+        return [];
+    }
+}
+
+const urls = safeGenerate();
 const sitemap = generateSitemap(urls);
 
 const outputPath = path.join(process.cwd(), 'public', 'sitemap.xml');
+
+// 🔥 2. Garantir pasta public
+fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+
 fs.writeFileSync(outputPath, sitemap, 'utf8');
 
-console.log(`✅ sitemap.xml gerado com ${urls.length} URLs em public/sitemap.xml`);
-urls.forEach((u) => console.log(`   ${u.loc}`));
+console.log(`✅ sitemap.xml gerado com ${urls.length} URLs`);
