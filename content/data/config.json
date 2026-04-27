@@ -28,17 +28,12 @@
         "title": "Airbuzz",
         "isTitleVisible": true,
         "primaryLinks": [
-            {
-                "type": "Link",
-                "label": "Airbuzz",
-                "url": "https://airbuzz.co/"
-            },
-            {
-                "type": "Link",
-                "label": "Blog",
-                "url": "/blog"
-            }
-        ],
+  {
+    "type": "Link",
+    "label": "Blog",
+    "url": "/"
+  }
+],
         "socialLinks": [
   {
     "type": "Social",
@@ -86,7 +81,7 @@
             {
                 "type": "Link",
                 "label": "Blog",
-                "url": "/blog",
+                "url": "/",
                 "altText": ""
             },
             {
@@ -106,13 +101,13 @@
             "address": "Rio de Janeiro, RJ",
             "addressAltText": "Endereço"
         },
-        "copyrightText": "© 2025 Airbuzz. Powered by [Netlify](https://www.netlify.com/)",
+        "copyrightText": "© 2026 Airbuzz.,
         "styles": {
             "self": {
                 "width": "narrow",
                 "padding": [
-                    "pt-16",
-                    "pb-16",
+                    "pt-10",
+                    "pb-8",
                     "pr-4",
                     "pl-4"
                 ]
