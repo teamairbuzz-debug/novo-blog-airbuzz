@@ -45,11 +45,26 @@ type ResolverFunction = (props: ContentObject, allData: ContentObject[]) => Cont
 const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
     PostFeedLayout: (props, allData) => {
         const allPosts = getAllPostsSorted(allData);
+        const postSlugs = (props as any).postFeed?.postSlugs;
+
+        const selectedPosts =
+            Array.isArray(postSlugs) && postSlugs.length > 0
+                ? postSlugs
+                      .map((slug) =>
+                          allPosts.find((post) => {
+                              const urlPath = post.__metadata?.urlPath || '';
+                              return urlPath.replace(/^\/|\/$/g, '') === slug.replace(/^\/|\/$/g, '');
+                          })
+                      )
+                      .filter(Boolean)
+                : allPosts;
+
         return {
             ...(props as PostFeedLayout),
-            items: allPosts
+            items: selectedPosts
         };
     },
+
     RecentPostsSection: (props, allData) => {
         const recentPosts = getAllPostsSorted(allData).slice(0, (props as RecentPostsSection).recentCount || 3);
         return {
@@ -57,6 +72,7 @@ const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
             posts: recentPosts
         };
     },
+
     ProjectLayout: (props, allData) => {
         const allProjects = getAllProjectsSorted(allData);
         const currentProjectId = props.__metadata?.id;
@@ -69,6 +85,7 @@ const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
             nextProject
         };
     },
+
     ProjectFeedLayout: (props, allData) => {
         const allProjects = getAllProjectsSorted(allData);
         return {
@@ -76,6 +93,7 @@ const PropsResolvers: Partial<Record<ContentObjectType, ResolverFunction>> = {
             items: allProjects
         };
     },
+
     RecentProjectsSection: (props, allData) => {
         const recentProjects = getAllProjectsSorted(allData).slice(
             0,
