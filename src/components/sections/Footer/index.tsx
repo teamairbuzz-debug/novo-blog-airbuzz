@@ -6,33 +6,48 @@ import { Action } from '@/components/atoms';
 export default function Footer(props) {
     const { primaryLinks = [], contacts, copyrightText, styles = {} } = props;
     const footerWidth = styles.self?.width ?? 'narrow';
+
     return (
-        <footer className={classNames('relative', styles.self?.padding ?? 'py-16 px-4')}>
+        <footer className={classNames('relative', styles.self?.padding ?? 'py-10 px-4')}>
             <div
-                className={classNames('border-t-2 border-current pt-8', {
+                className={classNames('border-t border-current/30 pt-6', {
                     'max-w-7xl mx-auto': footerWidth === 'narrow',
                     'max-w-8xl mx-auto': footerWidth === 'wide'
                 })}
             >
-                <div className="flex flex-col gap-x-12 gap-y-12 md:gap-y-32 md:flex-row md:flex-wrap md:justify-between">
+                <div className="flex flex-col gap-6">
                     {primaryLinks.length > 0 && (
-                        <div className={classNames(contacts ? 'w-full' : 'md:mr-auto')}>
-                            <ul className="flex flex-wrap max-w-5xl text-lg gap-x-8 gap-y-2">
-                                {primaryLinks.map((link, index) => (
-                                    <li key={index}>
-                                        <Action {...link} />
-                                    </li>
-                                ))}
+                        <nav aria-label="Footer navigation">
+                            <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm md:text-base">
+                                {primaryLinks.map((link, index) => {
+                                    const isWhatsapp =
+                                        link.label?.toLowerCase().includes('whatsapp') ||
+                                        link.url?.includes('wa.me');
+
+                                    return (
+                                        <li key={index}>
+                                            <Action
+                                                {...link}
+                                                className={classNames(
+                                                    isWhatsapp
+                                                        ? 'inline-flex rounded-full border border-current px-4 py-2 font-semibold'
+                                                        : ''
+                                                )}
+                                            />
+                                        </li>
+                                    );
+                                })}
                             </ul>
-                        </div>
+                        </nav>
                     )}
+
                     {contacts && <Contacts {...contacts} />}
-                    {/* Please keep this attribution up if you're using Stackbit's free plan. */}
+
                     {copyrightText && (
-                        <div className={classNames(primaryLinks.length > 0 || contacts ? 'md:self-end' : null)}>
+                        <div className="pt-2">
                             <Markdown
                                 options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
-                                className="tracking-widest prose-sm prose uppercase"
+                                className="tracking-widest prose-sm prose uppercase opacity-70"
                             >
                                 {copyrightText}
                             </Markdown>
@@ -46,33 +61,29 @@ export default function Footer(props) {
 
 function Contacts(props) {
     const { phoneNumber, phoneAltText, email, emailAltText, address, addressAltText, elementId } = props;
+
     return (
-        <div id={elementId || null} className="max-w-3xl prose sm:prose-lg">
+        <div id={elementId || null} className="flex flex-col gap-2 text-sm md:text-base">
             {phoneNumber && (
-                <p>
-                    <a href={`tel:${phoneNumber}`} aria-label={phoneAltText}>
-                        {phoneNumber}
-                    </a>
-                </p>
+                <a href={`tel:${phoneNumber}`} aria-label={phoneAltText} className="w-fit">
+                    {phoneNumber}
+                </a>
             )}
             {email && (
-                <p>
-                    <a href={`mailto:${email}`} aria-label={emailAltText}>
-                        {email}
-                    </a>
-                </p>
+                <a href={`mailto:${email}`} aria-label={emailAltText} className="w-fit">
+                    {email}
+                </a>
             )}
             {address && (
-                <p>
-                    <a
-                        href={`https://www.google.com/maps/search/${encodeURIComponent(address)}`}
-                        aria-label={addressAltText}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {address}
-                    </a>
-                </p>
+                <a
+                    href={`https://www.google.com/maps/search/${encodeURIComponent(address)}`}
+                    aria-label={addressAltText}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-fit"
+                >
+                    {address}
+                </a>
             )}
         </div>
     );
