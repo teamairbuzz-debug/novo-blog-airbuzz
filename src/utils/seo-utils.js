@@ -1,3 +1,9 @@
+const SITE_URL = 'https://blog.airbuzz.co';
+const DEFAULT_TITLE = 'Blog Airbuzz';
+const DEFAULT_DESCRIPTION =
+    'Casas para eventos, filmagens e hospedagem em grupo. Dicas práticas e inspirações para encontrar o espaço ideal com a Airbuzz.';
+const DEFAULT_OG_IMAGE = '/images/og-default.jpg';
+
 export function seoGenerateMetaTags(page, site) {
     let pageMetaTags = {};
 
@@ -10,6 +16,9 @@ export function seoGenerateMetaTags(page, site) {
     pageMetaTags = {
         ...pageMetaTags,
         ...(seoGenerateTitle(page, site) && { 'og:title': seoGenerateTitle(page, site) }),
+        ...(seoGenerateMetaDescription(page, site) && {
+            'og:description': seoGenerateMetaDescription(page, site)
+        }),
         ...(seoGenerateOgImage(page, site) && { 'og:image': seoGenerateOgImage(page, site) })
     };
 
@@ -34,55 +43,74 @@ export function seoGenerateMetaTags(page, site) {
 }
 
 export function seoGenerateTitle(page, site) {
-    let title = page.metaTitle ? page.metaTitle : page.title;
-    if (site.titleSuffix && page.addTitleSuffix !== false) {
-        title = `${title} - ${site.titleSuffix}`;
+    const baseTitle = page.metaTitle || page.title || DEFAULT_TITLE;
+    const suffix = site?.titleSuffix || '';
+
+    if (!baseTitle) return DEFAULT_TITLE;
+
+    const urlPath = page.__metadata?.urlPath || '';
+    const isHome = urlPath === '/' || urlPath === '';
+
+    const normalizedBase = baseTitle.toLowerCase().trim();
+    const normalizedSuffix = suffix.replace('|', '').toLowerCase().trim();
+
+    if (isHome) {
+        return baseTitle;
     }
-    return title;
+
+    if (!suffix || !normalizedSuffix) {
+        return baseTitle;
+    }
+
+    if (normalizedBase.includes(normalizedSuffix)) {
+        return baseTitle;
+    }
+
+    const safeSuffix = suffix.startsWith(' ') ? suffix : ` ${suffix}`;
+
+    return `${baseTitle}${safeSuffix}`;
 }
 
 export function seoGenerateMetaDescription(page, site) {
-    let metaDescription = null;
-    // Blog posts use the exceprt as the default meta description
-    if (page.__metadata.modelName === 'PostLayout') {
-        metaDescription = page.excerpt;
-    }
-    // page metaDescription field overrides all others
     if (page.metaDescription) {
-        metaDescription = page.metaDescription;
+        return page.metaDescription;
     }
-    return metaDescription;
+
+    if (page.__metadata?.modelName === 'PostLayout' && page.excerpt) {
+        return page.excerpt;
+    }
+
+    if (page.subtitle) {
+        return page.subtitle;
+    }
+
+    return DEFAULT_DESCRIPTION;
 }
 
 export function seoGenerateOgImage(page, site) {
     let ogImage = null;
-    // Use the sites default og:image field
+
     if (site.defaultSocialImage) {
         ogImage = site.defaultSocialImage;
     }
-    // Blog posts use the featuredImage as the default og:image
-    if (page.__metadata.modelName === 'PostLayout') {
-        if (page.featuredImage?.url) {
-            ogImage = page.featuredImage.url;
-        }
+
+    if (page.__metadata?.modelName === 'PostLayout' && page.featuredImage?.url) {
+        ogImage = page.featuredImage.url;
     }
-    // page socialImage field overrides all others
+
     if (page.socialImage) {
         ogImage = page.socialImage;
     }
 
-    // Relative or absolute URL
+    if (!ogImage) {
+        ogImage = DEFAULT_OG_IMAGE;
+    }
+
     const absoluteUrlRegex = new RegExp('^(?:[a-z+]+:)?//', 'i');
 
-    // ogImage should use an absolute URL. Get the Netlify domain URL from the Netlify environment variable process.env.URL
-    const domainUrl = site.env?.URL;
-
-    if (ogImage) {
-        if (domainUrl && !absoluteUrlRegex.test(ogImage)) {
-            return domainUrl + ogImage;
-        } else {
-            return ogImage;
-        }
+    if (absoluteUrlRegex.test(ogImage)) {
+        return ogImage;
     }
-    return null;
+
+    return `${SITE_URL}${ogImage.startsWith('/') ? ogImage : `/${ogImage}`}`;
 }
