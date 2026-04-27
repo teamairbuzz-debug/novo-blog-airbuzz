@@ -22,6 +22,7 @@ import Send from './send';
 import Twitter from './twitter';
 import Vimeo from './vimeo';
 import YouTube from './youtube';
+import WhatsAppIcon from './whatsapp';
 
 export const iconMap = {
     apple: Apple,
