@@ -8,8 +8,6 @@ colors: colors-b
 postFeed:
   type: PostFeedSection
   colors: colors-b
-  title: "Artigos sobre hospedagem em grupo"
-  subtitle: "Dicas para escolher casas amplas, confortáveis e bem localizadas para viagens em grupo, família, amigos e equipes."
   showDate: true
   showAuthor: false
   showExcerpt: true
