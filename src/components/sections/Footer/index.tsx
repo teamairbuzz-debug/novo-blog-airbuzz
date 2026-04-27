@@ -19,40 +19,29 @@ export default function Footer(props) {
                     {primaryLinks.length > 0 && (
                         <nav aria-label="Footer navigation">
                             <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm md:text-base">
-                                {primaryLinks.map((link, index) => {
-                                    const isWhatsapp =
-                                        link.label?.toLowerCase().includes('whatsapp') ||
-                                        link.url?.includes('wa.me');
-
-                                    return (
-                                        <li key={index}>
-                                            <Action
-                                                {...link}
-                                                className={classNames(
-                                                    isWhatsapp
-                                                        ? 'inline-flex rounded-full border border-current px-4 py-2 font-semibold'
-                                                        : ''
-                                                )}
-                                            />
-                                        </li>
-                                    );
-                                })}
+                                {primaryLinks.map((link, index) => (
+                                    <li key={index}>
+                                        <Action {...link} />
+                                    </li>
+                                ))}
                             </ul>
                         </nav>
                     )}
 
-                    {contacts && <Contacts {...contacts} />}
+                    <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+                        {contacts && <Contacts {...contacts} />}
 
-                    {copyrightText && (
-                        <div className="pt-2">
-                            <Markdown
-                                options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
-                                className="tracking-widest prose-sm prose uppercase opacity-70"
-                            >
-                                {copyrightText}
-                            </Markdown>
-                        </div>
-                    )}
+                        {copyrightText && (
+                            <div className="md:text-right">
+                                <Markdown
+                                    options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
+                                    className="tracking-widest prose-sm prose uppercase opacity-70"
+                                >
+                                    {copyrightText}
+                                </Markdown>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </footer>
