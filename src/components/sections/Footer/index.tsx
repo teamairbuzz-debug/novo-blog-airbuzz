@@ -15,10 +15,10 @@ export default function Footer(props) {
                     'max-w-8xl mx-auto': footerWidth === 'wide'
                 })}
             >
-                <div className="flex flex-col gap-6">
+                <div className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-5 md:grid-cols-[auto_1fr_auto] md:items-start">
                     {primaryLinks.length > 0 && (
-                        <nav aria-label="Footer navigation">
-                            <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm md:text-base">
+                        <nav aria-label="Footer navigation" className="col-start-1 row-start-1">
+                            <ul className="flex flex-col items-start gap-3 text-sm md:flex-row md:items-center md:gap-x-6">
                                 {primaryLinks.map((link, index) => (
                                     <li key={index}>
                                         <Action {...link} />
@@ -28,20 +28,17 @@ export default function Footer(props) {
                         </nav>
                     )}
 
-                    <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-                        {contacts && <Contacts {...contacts} />}
+                    {contacts && (
+                        <div className="col-start-2 row-start-1">
+                            <Contacts {...contacts} copyrightText={copyrightText} />
+                        </div>
+                    )}
 
-                        {copyrightText && (
-                            <div className="md:text-right">
-                                <Markdown
-                                    options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
-                                    className="tracking-widest prose-sm prose uppercase opacity-70"
-                                >
-                                    {copyrightText}
-                                </Markdown>
-                            </div>
-                        )}
-                    </div>
+                    {copyrightText && !contacts && (
+                        <div className="col-span-2 md:col-start-3 md:row-start-1 md:text-right">
+                            <CopyrightText text={copyrightText} />
+                        </div>
+                    )}
                 </div>
             </div>
         </footer>
@@ -49,7 +46,7 @@ export default function Footer(props) {
 }
 
 function Contacts(props) {
-    const { phoneNumber, phoneAltText, email, emailAltText, address, addressAltText, elementId } = props;
+    const { phoneNumber, phoneAltText, email, emailAltText, address, addressAltText, elementId, copyrightText } = props;
 
     return (
         <div id={elementId || null} className="flex flex-col gap-2 text-sm md:text-base">
@@ -58,22 +55,45 @@ function Contacts(props) {
                     {phoneNumber}
                 </a>
             )}
+
             {email && (
                 <a href={`mailto:${email}`} aria-label={emailAltText} className="w-fit">
                     {email}
                 </a>
             )}
-            {address && (
-                <a
-                    href={`https://www.google.com/maps/search/${encodeURIComponent(address)}`}
-                    aria-label={addressAltText}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-fit"
-                >
-                    {address}
-                </a>
+
+            {(address || copyrightText) && (
+                <div className="flex items-center justify-between gap-4">
+                    {address && (
+                        <a
+                            href={`https://www.google.com/maps/search/${encodeURIComponent(address)}`}
+                            aria-label={addressAltText}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-fit"
+                        >
+                            {address}
+                        </a>
+                    )}
+
+                    {copyrightText && (
+                        <div className="ml-auto text-right">
+                            <CopyrightText text={copyrightText} />
+                        </div>
+                    )}
+                </div>
             )}
         </div>
+    );
+}
+
+function CopyrightText({ text }) {
+    return (
+        <Markdown
+            options={{ forceInline: true, forceWrapper: true, wrapper: 'p' }}
+            className="tracking-widest prose-sm prose uppercase opacity-70"
+        >
+            {text}
+        </Markdown>
     );
 }
