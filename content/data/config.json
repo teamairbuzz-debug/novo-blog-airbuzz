@@ -30,7 +30,7 @@
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Site Oficial",
+                "label": "Airbuzz",
                 "url": "https://airbuzz.co/"
             },
             {
@@ -40,14 +40,28 @@
             }
         ],
         "socialLinks": [
-            {
-                "type": "Social",
-                "altText": "Instagram Airbuzz",
-                "label": "Instagram",
-                "url": "https://www.instagram.com/airbuzz.casas.sitios/",
-                "icon": "instagram"
-            }
-        ],
+  {
+    "type": "Social",
+    "altText": "WhatsApp Airbuzz",
+    "label": "WhatsApp",
+    "url": "https://wa.me/5521980736600?text=Ol%C3%A1!%20Vi%20o%20blog%20da%20Airbuzz%20e%20gostaria%20de%20ajuda%20para%20encontrar%20o%20im%C3%B3vel%20ideal.",
+    "icon": "whatsapp"
+  },
+  {
+    "type": "Social",
+    "altText": "Instagram Airbuzz",
+    "label": "Instagram",
+    "url": "https://www.instagram.com/airbuzz.casas.sitios/",
+    "icon": "instagram"
+  },
+  {
+    "type": "Social",
+    "altText": "YouTube Airbuzz",
+    "label": "YouTube",
+    "url": "https://www.youtube.com/@casas_airbuzz",
+    "icon": "youtube"
+  }
+],
         "styles": {
             "self": {
                 "width": "full"
