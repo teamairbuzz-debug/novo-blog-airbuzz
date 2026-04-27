@@ -1,16 +1,21 @@
 ---
 type: PostFeedLayout
-title: Hospedagem em grupo
-metaTitle: Hospedagem em grupo: como escolher | Airbuzz
-metaDescription: Guia completo para escolher casas ideais para hospedagem em grupo com conforto e praticidade.
+title: "Hospedagem em grupo"
+metaTitle: 'Hospedagem em grupo: como escolher a casa ideal | Airbuzz'
+metaDescription: "Veja dicas para escolher casas para hospedagem em grupo, viagens com amigos, família, retiros e estadias corporativas."
+colors: colors-b
+
 postFeed:
   type: PostFeedSection
-  variant: variant-d
+  colors: colors-b
+  title: "Artigos sobre hospedagem em grupo"
+  subtitle: "Dicas para escolher casas amplas, confortáveis e bem localizadas para viagens em grupo, família, amigos e equipes."
   showDate: true
   showAuthor: false
   showExcerpt: true
   showFeaturedImage: true
   showReadMoreLink: true
+  variant: variant-d
   postSlugs:
     - barra-da-tijuca-hospedagem-turistas-rio
     - churrasco-familia-amigos-menor-custo
@@ -22,15 +27,24 @@ postFeed:
         - pl-4
         - pr-4
         - pb-12
+
 topSections:
   - type: HeroSection
-    title: Hospedagem em grupo
-    subtitle: Como escolher a casa perfeita para viagens em grupo.
+    title: "Hospedagem em grupo"
+    subtitle: "Como escolher casas confortáveis e bem estruturadas para viagens em grupo, retiros, famílias e estadias corporativas."
+    actions: []
+    colors: colors-b
+    backgroundSize: full
+    elementId: ""
     styles:
       self:
+        height: auto
+        width: narrow
         padding:
           - pt-16
           - pb-16
           - pl-4
           - pr-4
+        flexDirection: row
+        textAlign: left
 ---
