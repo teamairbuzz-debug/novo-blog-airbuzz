@@ -48,5 +48,6 @@ export const iconMap = {
     send: Send,
     twitter: Twitter,
     vimeo: Vimeo,
+    whatsapp: WhatsAppIcon,
     youtube: YouTube
 };
