@@ -15,10 +15,10 @@ export default function Footer(props) {
                     'max-w-8xl mx-auto': footerWidth === 'wide'
                 })}
             >
-                <div className="grid grid-cols-[auto_1fr] gap-x-6 gap-y-5 md:grid-cols-[auto_1fr_auto] md:items-start">
+                <div className="flex flex-col gap-5">
                     {primaryLinks.length > 0 && (
-                        <nav aria-label="Footer navigation" className="col-start-1 row-start-1">
-                            <ul className="flex flex-col items-start gap-3 text-sm md:flex-row md:items-center md:gap-x-6">
+                        <nav aria-label="Footer navigation">
+                            <ul className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm md:text-base">
                                 {primaryLinks.map((link, index) => (
                                     <li key={index}>
                                         <Action {...link} />
@@ -28,17 +28,9 @@ export default function Footer(props) {
                         </nav>
                     )}
 
-                    {contacts && (
-                        <div className="col-start-2 row-start-1">
-                            <Contacts {...contacts} copyrightText={copyrightText} />
-                        </div>
-                    )}
+                    {contacts && <Contacts {...contacts} copyrightText={copyrightText} />}
 
-                    {copyrightText && !contacts && (
-                        <div className="col-span-2 md:col-start-3 md:row-start-1 md:text-right">
-                            <CopyrightText text={copyrightText} />
-                        </div>
-                    )}
+                    {copyrightText && !contacts && <CopyrightText text={copyrightText} />}
                 </div>
             </div>
         </footer>
