@@ -67,39 +67,39 @@
     "type": "Footer",
     "primaryLinks": [
       {
-        "type": "Link",
-        "label": "Site",
-        "url": "https://airbuzz.co/",
-        "altText": ""
+        "type": "Button",
+        "label": "Fale no WhatsApp",
+        "url": "https://wa.me/5521980736600?text=Ol%C3%A1!%20Vi%20o%20blog%20da%20Airbuzz%20e%20gostaria%20de%20ajuda%20para%20encontrar%20o%20im%C3%B3vel%20ideal.",
+        "style": "secondary"
       },
       {
         "type": "Link",
-        "label": "Contato",
-        "url": "mailto:contato@airbuzz.co",
-        "altText": ""
+        "label": "Site",
+        "url": "https://airbuzz.co/",
+        "altText": "Site oficial da Airbuzz"
       },
       {
         "type": "Link",
         "label": "Blog",
         "url": "/",
-        "altText": ""
+        "altText": "Blog Airbuzz"
       },
       {
         "type": "Link",
         "label": "LinkedIn",
         "url": "https://www.linkedin.com/company/airbuzzco",
-        "altText": "LinkedIn"
+        "altText": "LinkedIn Airbuzz"
       }
     ],
     "contacts": {
       "type": "ContactBlock",
-      "title": "Contato",
+      "title": "Atendimento Airbuzz",
       "phoneNumber": "+55 21 98073-6600",
-      "phoneAltText": "Telefone da Airbuzz",
+      "phoneAltText": "Telefone e WhatsApp da Airbuzz",
       "email": "contato@airbuzz.co",
-      "emailAltText": "Email",
+      "emailAltText": "Email da Airbuzz",
       "address": "Rio de Janeiro, RJ",
-      "addressAltText": "Endereço"
+      "addressAltText": "Localização da Airbuzz"
     },
     "copyrightText": "© 2026 Airbuzz.",
     "styles": {
