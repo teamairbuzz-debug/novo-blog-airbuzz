@@ -1,117 +1,117 @@
 {
-    "type": "Config",
-    "favicon": "/images/favicon_airbuzz.png",
-    "titleSuffix": " | Airbuzz",
-    "defaultSocialImage": "/images/og-default.jpg",
-    "defaultMetaTags": [
-        {
-            "property": "og:site_name",
-            "content": "Blog Airbuzz"
-        },
-        {
-            "property": "og:locale",
-            "content": "pt_BR"
-        },
-        {
-            "property": "twitter:card",
-            "content": "summary_large_image"
-        },
-        {
-            "property": "twitter:site",
-            "content": "@airbuzz_co"
-        }
-    ],
-    "header": {
-        "type": "Header",
-        "headerVariant": "variant-c",
-        "isSticky": false,
-        "title": "Airbuzz",
-        "isTitleVisible": true,
-        "primaryLinks": [
-  {
-    "type": "Link",
-    "label": "Blog",
-    "url": "/"
-  }
-],
-        "socialLinks": [
-  {
-    "type": "Social",
-    "altText": "WhatsApp Airbuzz",
-    "label": "WhatsApp",
-    "url": "https://wa.me/5521980736600?text=Ol%C3%A1!%20Vi%20o%20blog%20da%20Airbuzz%20e%20gostaria%20de%20ajuda%20para%20encontrar%20o%20im%C3%B3vel%20ideal.",
-    "icon": "whatsapp"
-  },
-  {
-    "type": "Social",
-    "altText": "Instagram Airbuzz",
-    "label": "Instagram",
-    "url": "https://www.instagram.com/airbuzz.casas.sitios/",
-    "icon": "instagram"
-  },
-  {
-    "type": "Social",
-    "altText": "YouTube Airbuzz",
-    "label": "YouTube",
-    "url": "https://www.youtube.com/@casas_airbuzz",
-    "icon": "youtube"
-  }
-],
-        "styles": {
-            "self": {
-                "width": "full"
-            }
-        }
+  "type": "Config",
+  "favicon": "/images/favicon_airbuzz.png",
+  "titleSuffix": " | Airbuzz",
+  "defaultSocialImage": "/images/og-default.jpg",
+  "defaultMetaTags": [
+    {
+      "property": "og:site_name",
+      "content": "Blog Airbuzz"
     },
-    "footer": {
-        "type": "Footer",
-        "primaryLinks": [
-            {
-                "type": "Link",
-                "label": "Site",
-                "url": "https://airbuzz.co/",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "Contato",
-                "url": "mailto:contato@airbuzz.co",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "Blog",
-                "url": "/",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/company/airbuzzco",
-                "altText": "LinkedIn"
-            }
-        ],
-        "contacts": {
-            "type": "ContactBlock",
-            "title": "Contato",
-            "phoneNumber": "+55 21 98073-6600",
-            "phoneAltText": "Telefone da Airbuzz",
-            "email": "contato@airbuzz.co",
-            "emailAltText": "Email",
-            "address": "Rio de Janeiro, RJ",
-            "addressAltText": "Endereço"
-        },
-        "copyrightText": "© 2026 Airbuzz.,
-        "styles": {
-            "self": {
-                "width": "narrow",
-                "padding": [
-                    "pt-10",
-                    "pb-8",
-                    "pr-4",
-                    "pl-4"
-                ]
-            }
-        }
+    {
+      "property": "og:locale",
+      "content": "pt_BR"
+    },
+    {
+      "property": "twitter:card",
+      "content": "summary_large_image"
+    },
+    {
+      "property": "twitter:site",
+      "content": "@airbuzz_co"
     }
+  ],
+  "header": {
+    "type": "Header",
+    "headerVariant": "variant-c",
+    "isSticky": false,
+    "title": "Airbuzz",
+    "isTitleVisible": true,
+    "primaryLinks": [
+      {
+        "type": "Link",
+        "label": "Blog",
+        "url": "/"
+      }
+    ],
+    "socialLinks": [
+      {
+        "type": "Social",
+        "altText": "WhatsApp Airbuzz",
+        "label": "WhatsApp",
+        "url": "https://wa.me/5521980736600?text=Ol%C3%A1!%20Vi%20o%20blog%20da%20Airbuzz%20e%20gostaria%20de%20ajuda%20para%20encontrar%20o%20im%C3%B3vel%20ideal.",
+        "icon": "whatsapp"
+      },
+      {
+        "type": "Social",
+        "altText": "Instagram Airbuzz",
+        "label": "Instagram",
+        "url": "https://www.instagram.com/airbuzz.casas.sitios/",
+        "icon": "instagram"
+      },
+      {
+        "type": "Social",
+        "altText": "YouTube Airbuzz",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@casas_airbuzz",
+        "icon": "youtube"
+      }
+    ],
+    "styles": {
+      "self": {
+        "width": "full"
+      }
+    }
+  },
+  "footer": {
+    "type": "Footer",
+    "primaryLinks": [
+      {
+        "type": "Link",
+        "label": "Site",
+        "url": "https://airbuzz.co/",
+        "altText": ""
+      },
+      {
+        "type": "Link",
+        "label": "Contato",
+        "url": "mailto:contato@airbuzz.co",
+        "altText": ""
+      },
+      {
+        "type": "Link",
+        "label": "Blog",
+        "url": "/",
+        "altText": ""
+      },
+      {
+        "type": "Link",
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/company/airbuzzco",
+        "altText": "LinkedIn"
+      }
+    ],
+    "contacts": {
+      "type": "ContactBlock",
+      "title": "Contato",
+      "phoneNumber": "+55 21 98073-6600",
+      "phoneAltText": "Telefone da Airbuzz",
+      "email": "contato@airbuzz.co",
+      "emailAltText": "Email",
+      "address": "Rio de Janeiro, RJ",
+      "addressAltText": "Endereço"
+    },
+    "copyrightText": "© 2026 Airbuzz.",
+    "styles": {
+      "self": {
+        "width": "narrow",
+        "padding": [
+          "pt-10",
+          "pb-8",
+          "pr-4",
+          "pl-4"
+        ]
+      }
+    }
+  }
 }
