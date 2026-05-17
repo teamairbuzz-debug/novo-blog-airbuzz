@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+publish_mode: editorial_workflow
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+site_url: "https://blog.airbuzz.co"
+display_url: "https://blog.airbuzz.co"
+logo_url: "https://blog.airbuzz.co/favicon.ico"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "posts"
+    label: "Blog posts"
+    label_singular: "Blog post"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    summary: "{{date}} - {{title}}"
+    sortable_fields: ["date", "title"]
+    view_filters:
+      - label: "Published"
+        field: "draft"
+        pattern: false
+      - label: "Drafts"
+        field: "draft"
+        pattern: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "URL text, for example: casa-para-evento-rio"
+        required: false
+      - label: "Publish date"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        hint: "Short summary shown on listing pages and search results."
+      - label: "Cover image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Image alt text"
+        name: "imageAlt"
+        widget: "string"
+        required: false
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        required: false
+        options:
+          - "Casas para eventos no Rio"
+          - "Casas para eventos em Sao Paulo"
+          - "Casas para filmagem no Rio"
+          - "Casas para filmagem em Sao Paulo"
+          - "Hospedagem em grupo"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
