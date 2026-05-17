@@ -1,21 +1,23 @@
 ---
-title: "Nosso Bem: a energia contagiante do Pagode que vai animar suas festas
-  nas casas Airbuzz!"
-slug: banda-pagode-em-casa-airbuzz
-date: 2026-05-17
-description: >
-  Conheça a banda de pagode Nosso Bem e descubra como transformar sua festa em
-  um evento inesquecível com música ao vivo, casa Airbuzz, buffet e muito mais
-  no Rio de Janeiro.
-image: /images/banda-nosso-bem_roda-samba_rj.jpg
-imageAlt: Show da banda de pagode Nosso Bem em casa para eventos no Rio de Janeiro
-category: Casas para eventos no Rio
-tags:
-  - piscina
-  - churrasco
-  - churrasco Comemorações Evento Corporativo Festa de aniversário Mini Wedding
-    Festa Fim de Ano
-draft: false
+type: PostLayout
+title: "Nosso Bem: a energia contagiante do Pagode que vai animar suas festas nas casas Airbuzz!"
+metaTitle: "Nosso Bem: banda de pagode para eventos em casas Airbuzz"
+metaDescription: "Conheça a banda de pagode Nosso Bem e descubra como transformar sua festa em um evento inesquecível com música ao vivo, casa Airbuzz, buffet e muito mais no Rio de Janeiro."
+colors: colors-b
+date: '2026-05-17'
+author: content/data/team/team-airbuzz.json
+excerpt: "Conheça a banda de pagode Nosso Bem e descubra como transformar sua festa em um evento inesquecível com música ao vivo, casa Airbuzz, buffet e muito mais no Rio de Janeiro."
+featuredImage:
+  type: ImageBlock
+  url: /images/banda-nosso-bem_roda-samba_rj.jpg
+  altText: Show da banda de pagode Nosso Bem em casa para eventos no Rio de Janeiro
+socialImage: /images/banda-nosso-bem_roda-samba_rj.jpg
+media:
+  type: ImageBlock
+  url: /images/banda-nosso-bem_roda-samba_rj.jpg
+  altText: Show da banda de pagode Nosso Bem em casa para eventos no Rio de Janeiro
+  caption: ''
+  elementId: media
 ---
 Olá, amantes do pagode! Hoje [Airbuzz](https://airbuzz.co/?utm_source=blog&utm_campaign=banda) apresenta a vocês uma banda de pagode que tem conquistado corações e agitado festas no Rio de Janeiro: Nosso Bem. Neste blog, mergulharemos no mundo contagiante do pagode e exploraremos o talento e a energia envolvente dessa banda.
 
