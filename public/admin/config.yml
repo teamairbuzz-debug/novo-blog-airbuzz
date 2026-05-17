@@ -6,8 +6,8 @@ local_backend: true
 
 publish_mode: editorial_workflow
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "public/images"
+public_folder: "/images"
 
 site_url: "https://blog.airbuzz.co"
 display_url: "https://blog.airbuzz.co"
@@ -22,7 +22,7 @@ collections:
   - name: "posts"
     label: "Blog posts"
     label_singular: "Blog post"
-    folder: "content/posts"
+    folder: "content/pages"
     create: true
     slug: "{{slug}}"
     summary: "{{date}} - {{title}}"
