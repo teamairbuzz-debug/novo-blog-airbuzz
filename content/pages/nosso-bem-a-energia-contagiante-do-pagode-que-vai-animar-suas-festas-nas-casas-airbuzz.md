@@ -8,6 +8,7 @@ description: >
   um evento inesquecível com música ao vivo, casa Airbuzz, buffet e muito mais
   no Rio de Janeiro.
 image: /images/banda-nosso-bem_roda-samba_rj.jpg
+imageAlt: Show da banda de pagode Nosso Bem em casa para eventos no Rio de Janeiro
 category: Casas para eventos no Rio
 tags:
   - piscina
