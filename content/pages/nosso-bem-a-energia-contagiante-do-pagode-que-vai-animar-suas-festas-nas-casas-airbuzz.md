@@ -15,7 +15,7 @@ tags:
   - churrasco
   - churrasco Comemorações Evento Corporativo Festa de aniversário Mini Wedding
     Festa Fim de Ano
-draft: true
+draft: false
 ---
 Olá, amantes do pagode! Hoje [Airbuzz](https://airbuzz.co/?utm_source=blog&utm_campaign=banda) apresenta a vocês uma banda de pagode que tem conquistado corações e agitado festas no Rio de Janeiro: Nosso Bem. Neste blog, mergulharemos no mundo contagiante do pagode e exploraremos o talento e a energia envolvente dessa banda.
 
